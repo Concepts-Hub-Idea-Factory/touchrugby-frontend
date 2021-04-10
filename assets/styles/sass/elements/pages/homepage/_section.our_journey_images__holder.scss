@@ -1,0 +1,118 @@
+
+
+// .our_journey_images__holder>div>p {
+//     width: 112px;
+//     height: 36px;
+//     font-family: Roboto;
+//     font-style: normal;
+//     font-weight: 900;
+//     font-size: 15px;
+//     line-height: 18px;
+//     text-transform: capitalize;
+//     color: #FFFFFF;
+// } 
+
+
+
+.our_journey_images__holder>div>p {
+    grid-area: title;
+    justify-self: start;
+    align-self: end;
+    padding-left:1rem;
+    width: 112px;
+    height: 36px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    // line-height: 18px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.our_journey_images__holder>div {
+    height: 100%;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-template-areas: 
+    "title"
+    ".";
+}
+
+.our_journey_images__holder > .our_journey__extreme_level_of_sports_a {
+    background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/our_journey__extreme_level_of_sports_a.svg) no-repeat;
+    background-size: cover;
+}
+
+.our_journey_images__holder > .our_journey__extreme_level_of_sports_b {
+    background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/our_journey__extreme_level_of_sports_b.svg) no-repeat;
+
+    background-size: cover;
+}
+
+.our_journey_images__holder > .our_journey__extreme_level_of_sports_c {
+    background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/our_journey__extreme_level_of_sports_c.svg) no-repeat;
+
+    background-size: cover;
+}
+ 
+
+
+//Responsive Web Design - Quirkmode
+
+@media (min-width: 1281px) {
+
+    /* 
+	  ##Device = Desktops
+	  ##Screen = 1281px to higher resolution desktops
+	*/
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* 
+	  ##Device = Laptops, Desktops
+	  ##Screen = B/w 1025px to 1280px
+	*/
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* 
+	  ##Device = Tablets, Ipads (portrait)
+	  ##Screen = B/w 768px to 1024px
+	*/
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* 
+	  ##Device = Tablets, Ipads (landscape)
+	  ##Screen = B/w 768px to 1024px
+	*/
+
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* 
+	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+	  ##Screen = B/w 481px to 767px
+	*/
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* 
+	  ##Device = Most of the Smartphones Mobiles (Portrait)
+	  ##Screen = B/w 320px to 479px
+	*/
+
+}

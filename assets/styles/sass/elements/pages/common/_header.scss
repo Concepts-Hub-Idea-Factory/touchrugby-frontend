@@ -1,0 +1,308 @@
+header>.logo__holder {
+    grid-area: logo__holder;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    // align-item: center;
+    place-items: center;
+}
+
+header>.logo__holder>.logo {
+    height: 60%;
+}
+
+header>.sidemenu__holder {
+    display: none;
+}
+
+header>.upper_menu__holder {
+    grid-area: upper_menu__holder;
+    background: url(./assets/images/upper_menu__holder_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+header>.upper_menu__holder>ul {
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-right: var(--oneSidePadding);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: end;
+}
+
+header>.upper_menu__holder>ul>li.username {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: .5rem;
+    font-family: Rosario;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 12px;
+    color: #000000;
+    align-items: center;
+}
+
+
+header>.upper_menu__holder>ul>li.username>img {
+    justify-self: end;
+}
+
+header>.upper_menu__holder>ul>li.username>span {
+    justify-self: start;
+
+}
+
+header>.upper_menu__holder>ul>li.phone {
+    display: grid;
+    grid-template-columns: .5fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: .5rem;
+    // position: absolute;
+    // width: 52px;
+    // height: 12px;
+    // left: 540px;
+    // top: 10px;
+    font-family: Rosario;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    color: #000000;
+    align-items: center;
+}
+
+
+
+header>.upper_menu__holder>ul>li.phone>img {
+    justify-self: end;
+}
+
+header>.upper_menu__holder>ul>li.phone>span {
+    justify-self: start;
+
+}
+
+header>.upper_menu__holder>ul>li>button.cta_btn {
+    width: 6rem;
+    height: 2rem;
+    background: #07A358;
+    border-radius: 5px;
+    font-family: Rosario;
+    font-style: normal;
+    font-weight: 300;
+    font-size: .925rem;
+    line-height: 12px;
+    color: #FFFFFF;
+    border: none;
+}
+
+header>.lower_menu__holder {
+    grid-area: lower_menu__holder;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: auto;
+    grid-template-areas: "first_half second_half";
+    // padding-right: var(--oneSidePadding);
+    // margin-bottom:5rem;
+}
+
+header>.lower_menu__holder>div.first_half {
+    grid-area: first_half;
+}
+
+header>.lower_menu__holder>ul.second_half {
+    grid-area: second_half;
+}
+
+header>.lower_menu__holder>ul {
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1.3fr 1fr;
+	grid-template-columns: repeat(8,auto);
+    grid-template-rows: auto;
+    padding-right: var(--oneSidePadding);
+    align-items: center;
+    grid-gap: 1rem;
+    grid-template-areas: "Home About News What_Is_Touch_Rugby Sponsorship Rules Contacts search_icon";
+
+}
+
+header>.lower_menu__holder>ul>li>a {
+    text-decoration: none;
+    min-width: 100px;
+    // height: 8px;
+    // left: 300px;
+    // top: 45px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    // line-height: 0.5rem;
+    color: #FFFFFF;
+}
+
+
+header>.lower_menu__holder>ul>li>a:hover {
+	text-decoration: underline;
+    text-decoration-color: #EA215A;
+    // text-decoration-thickness: .125em;
+	text-decoration-thickness:.3rem;
+    text-underline-offset: 1.5px;
+	
+}
+
+header>.lower_menu__holder>ul>li.Home {
+    grid-area: Home;
+    justify-self: end;
+}
+
+header>.lower_menu__holder>ul>li.About {
+    grid-area: About;
+    justify-self: center;
+}
+
+header>.lower_menu__holder>ul>li.News {
+    grid-area: News;
+    justify-self: center;
+}
+
+header>.lower_menu__holder>ul>li.What_Is_Touch_Rugby {
+    grid-area: What_Is_Touch_Rugby;
+    justify-self: center;
+}
+
+header>.lower_menu__holder>ul>li.Sponsorship {
+    grid-area: Sponsorship;
+    justify-self: center;
+}
+
+header>.lower_menu__holder>ul>li.Rules {
+    grid-area: Rules;
+    justify-self: center;
+}
+
+header>.lower_menu__holder>ul>li.Contacts {
+    grid-area: Contacts;
+    justify-self: end;
+}
+
+header>.lower_menu__holder>ul>li.search_icon {
+    grid-area: search_icon;
+    justify-self: center;
+}
+
+
+
+
+//Responsive Web Design - Quirkmode
+
+@media (min-width: 1281px) {
+
+    /* 
+	  ##Device = Desktops
+	  ##Screen = 1281px to higher resolution desktops
+	*/
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* 
+	  ##Device = Laptops, Desktops
+	  ##Screen = B/w 1025px to 1280px
+	*/
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* 
+	  ##Device = Tablets, Ipads (portrait)
+	  ##Screen = B/w 768px to 1024px
+	*/
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* 
+	  ##Device = Tablets, Ipads (landscape)
+	  ##Screen = B/w 768px to 1024px
+	*/
+
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* 
+	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+	  ##Screen = B/w 481px to 767px
+	*/
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* 
+	  ##Device = Most of the Smartphones Mobiles (Portrait)
+	  ##Screen = B/w 320px to 479px
+	*/
+
+
+
+
+    header>.logo__holder {
+        grid-area: logo__holder;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        justify-self: start;
+        padding-left: 2rem;
+    }
+
+    header>.logo__holder>.logo {
+        height: 60%;
+    }
+
+    header>.upper_menu__holder {
+        display: none;
+    }
+
+
+    header>.lower_menu__holder {
+        display: none;
+    }
+
+
+    header>.sidemenu__holder {
+        display: grid;
+        justify-self: end;
+        align-self: center;
+        padding-right: 2rem;
+    }
+
+
+    header>.sidemenu__holder>.menu_icon_hambager_closed {
+        height: 1.875rem;
+        width: 1.875rem;
+        cursor: pointer;
+    }
+
+    header>.lower_menu__holder {
+        grid-area: lower_menu__holder;
+        display: grid;
+        grid-template-columns: auto;
+        // grid-template-columns: 3fr 7fr;
+        // grid-template-rows: 1fr;
+        // grid-template-areas: "first_half second_half";
+        // padding-right: var(--oneSidePadding);
+    }
+    
+}

@@ -1,0 +1,58 @@
+.trc_rules_cards__holder{}
+
+.trc_rules_cards__holder > .card{
+    max-height: 18.75rem;
+    max-width: 18.75rem;
+    padding:3.5rem;
+
+    border: 0.0625rem solid #C4C4C4;
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 2fr 2fr 6fr;
+    grid-template-areas:
+    "icon"
+        "title"
+        "separator"
+        "description"
+    ;
+    grid-gap:1rem;
+    place-items: center;
+}
+
+
+.trc_rules_cards__holder > .card > .icon{
+    grid-area: icon;
+
+}
+.trc_rules_cards__holder > .card > .title{
+    grid-area: title; 
+font-family: Roboto;
+font-style:normal;
+font-weight:bolder;
+font-size: 1.4rem;
+// line-height: 16px;
+text-transform: capitalize;
+
+color: #07A358;
+
+
+
+}
+.trc_rules_cards__holder > .card > .separator{
+    grid-area: separator;
+
+}
+.trc_rules_cards__holder > .card > .description{
+    grid-area: description;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    // line-height: 12px;
+    text-align: center;
+    
+    color: #000000;
+
+}

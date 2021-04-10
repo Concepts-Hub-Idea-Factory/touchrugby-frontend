@@ -1,0 +1,59 @@
+@mixin crop_text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+@mixin cta_btn {
+    width: 6rem;
+    height: 2rem;
+    background: #07A358;
+    border-radius: 5px;
+    font-family: Rosario;
+    font-style: normal;
+    font-weight: 300;
+    font-size: .925rem;
+    line-height: 12px;
+    color: #FFFFFF;
+    border: none;
+}
+
+
+@mixin small_title{ 
+    // font-style: normal;
+    // font-weight: 900;
+    font-size: 1rem;
+    // color: #FFFFFF;
+    // align-self: end;
+    // padding-left: 80px;
+}
+
+
+@mixin big_title {
+    // grid-area: title;
+    //position: absolute;
+    // width: 266px;
+    // height: 50px;
+    // left: 79px;
+    // top: 232px;
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: 900;
+    font-size: 3rem;
+    // line-height: 2.1875rem;
+    // color: #FFFFFF;
+}
+
+ 
+@mixin description_text {
+
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    // color: #FFFFFF;
+    // padding-left: 80px;
+}
+

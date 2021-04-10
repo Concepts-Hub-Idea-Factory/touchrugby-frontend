@@ -1,0 +1,126 @@
+
+.blogs_text__holder>.title {
+    grid-area: title;
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: bold;
+    // font-size: 24px;
+    // line-height: 28px;
+    // text-transform: uppercase;
+    // color: #000000;
+    // justify-self: center;
+    // align-self: center;
+    // margin-top: 5rem;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color: #000000;
+
+    justify-self: center;
+    // align-self: center;
+    align-self: center;
+    // margin-top: 5rem;
+    margin-top: var(--upDownPadding);
+}
+.blogs_text__holder>.separator {
+    grid-area: separator;
+    justify-self: center;
+    align-self: center;
+
+}
+
+// .blogs_text__holder>div>.description {
+.blogs_text__holder>.description {
+    grid-area: description;
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: normal;
+    // font-size: 16px;
+    // line-height: 24px;
+    // text-align: center;
+    // color: #000000;
+    // justify-self: center;
+    // align-self: center;
+    // margin-bottom: 5rem;
+
+    width: 70%;
+    font-family: Roboto;
+    font-style: normal;
+    // font-size: 0.625rem;
+    // line-height: 0.75rem;
+    text-align: center;
+    color: #000000;
+
+    justify-self: center;
+    align-self: center;
+    // margin-bottom: 5rem;
+    
+    margin-top: var(--upDownPadding);
+
+    @include description_text;
+    font-weight: normal;
+
+}
+ 
+
+
+
+//Responsive Web Design - Quirkmode
+
+@media (min-width: 1281px) {
+
+    /* 
+	  ##Device = Desktops
+	  ##Screen = 1281px to higher resolution desktops
+	*/
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* 
+	  ##Device = Laptops, Desktops
+	  ##Screen = B/w 1025px to 1280px
+	*/
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* 
+	  ##Device = Tablets, Ipads (portrait)
+	  ##Screen = B/w 768px to 1024px
+	*/
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* 
+	  ##Device = Tablets, Ipads (landscape)
+	  ##Screen = B/w 768px to 1024px
+	*/
+
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* 
+	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+	  ##Screen = B/w 481px to 767px
+	*/
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* 
+	  ##Device = Most of the Smartphones Mobiles (Portrait)
+	  ##Screen = B/w 320px to 479px
+	*/
+
+}

@@ -1,0 +1,176 @@
+// .what_is_touch_rugby__holder>div {
+//     // margin-top: 5rem;
+//     // margin-bottom: 5rem;
+//     // height: 70vh;
+// }
+
+.what_is_touch_rugby__holder>.img__holder {
+    grid-column: 1/6;
+    grid-row: 1;
+    border-radius: 10px;
+    background: url(../images/what_is_touch.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 50vh;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.what_is_touch_rugby__holder>.text__holder {
+    display: grid;
+    grid-column: 5/7;
+    grid-row: 1;
+    background: transparent;
+    align-items: center;
+    // border: solid green 3px;
+}
+
+.what_is_touch_rugby__holder>.text__holder>div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 4fr 4fr;
+    height: 40vh;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+// .what_is_touch_rugby__holder>.img__holder>img {
+//     width: 80%;
+//     object-fit: contain;
+// }
+
+.what_is_touch_rugby__holder>.text__holder>div>.separator {
+    justify-self: center;
+    align-self: end;
+}
+
+.what_is_touch_rugby__holder>.text__holder>div>.title {
+    // width: 222px;
+    // height: 52px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    // line-height: 28px;
+    text-transform: capitalize;
+    color: #000000;
+    justify-self: center;
+    align-self: end;
+}
+
+
+.what_is_touch_rugby__holder>.text__holder>div>.title>span {
+    // width: 222px;
+    // height: 52px;
+    font-family: Rock Salt;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    // line-height: 57px;
+    text-transform: capitalize;
+    color: #000000;
+
+}
+
+
+
+.what_is_touch_rugby__holder>.text__holder>div>.description {
+    // width: 279px;
+    // height: 72px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    // line-height: 24px;
+    text-align: center;
+    color: #000000;
+    // @include crop_text;
+    // padding:0 2rem 0 2rem;
+    justify-self: center;
+    align-self: end;
+    padding: 0 2rem 0 2rem;
+}
+
+
+.what_is_touch_rugby__holder>.text__holder>div>button {
+    width: 61px;
+    height: 13px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    color: #FFFFFF;
+    width: 140px;
+    height: 26px;
+    background: #07A358;
+    border-radius: 6px;
+    border: none;
+    // margin:0 2rem 0 2rem;
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+//Responsive Web Design - Quirkmode
+
+@media (min-width: 1281px) {
+
+    /* 
+	  ##Device = Desktops
+	  ##Screen = 1281px to higher resolution desktops
+	*/
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* 
+	  ##Device = Laptops, Desktops
+	  ##Screen = B/w 1025px to 1280px
+	*/
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* 
+	  ##Device = Tablets, Ipads (portrait)
+	  ##Screen = B/w 768px to 1024px
+	*/
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* 
+	  ##Device = Tablets, Ipads (landscape)
+	  ##Screen = B/w 768px to 1024px
+	*/
+
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* 
+	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+	  ##Screen = B/w 481px to 767px
+	*/
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* 
+	  ##Device = Most of the Smartphones Mobiles (Portrait)
+	  ##Screen = B/w 320px to 479px
+	*/
+
+}

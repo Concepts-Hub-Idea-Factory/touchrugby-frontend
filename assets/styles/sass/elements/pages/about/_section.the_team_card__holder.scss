@@ -1,0 +1,23 @@
+.the_team_card__holder>.card {
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: auto auto;
+    grid-gap:2rem;
+}
+
+.the_team_card__holder>.card>.person {
+    width:100%;
+    // align-self: end;
+}
+
+.the_team_card__holder>.card>.about {
+    width:50%;
+    align-self: start;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1rem;
+    line-height: 1rem;
+    // text-transform: uppercase;
+    color: #FFFFFF;
+}

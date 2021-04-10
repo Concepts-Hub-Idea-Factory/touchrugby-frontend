@@ -1,0 +1,150 @@
+.medals_list__holder>div {
+    // width: 178px;
+    // height: 170px;
+
+    max-height: 18.75rem;
+    max-width: 18.75rem;
+    padding:3.5rem;
+
+    border: .5rem solid hsl(151, 92%, 33%);
+    border-radius: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr 2fr 2fr 6fr;
+    grid-template-areas:
+        "title"
+        "subtitle"
+        "separator"
+        "description"
+    ;
+    grid-gap:1rem;
+}
+
+
+.medals_list__holder>div>.title {
+    grid-area: title;
+    // width: 58px;
+    // height: 39px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    // line-height: 39px;
+
+    text-transform: capitalize;
+    color: #07A358;
+
+    justify-self: center;
+    align-self: end;
+    // margin-top: 5rem;
+
+}
+
+.medals_list__holder>div>.subtitle {
+    grid-area: subtitle;
+
+    // width: 121px;
+    // height: 15px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    // line-height: 15px;
+    text-transform: capitalize;
+
+    color: #000000;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.medals_list__holder>div>.separator {
+    grid-area: separator;
+    justify-self: center;
+    align-self: center;
+}
+
+.medals_list__holder>div>.description {
+    grid-area: description;
+    
+    // width: 121px;
+    // height: 15px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    // line-height: 15px;
+    text-transform: capitalize;
+
+    color: #000000;
+
+    justify-self: center;
+    align-self: start;
+    // @include crop_text;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+
+
+//Responsive Web Design - Quirkmode
+
+@media (min-width: 1281px) {
+
+    /* 
+	  ##Device = Desktops
+	  ##Screen = 1281px to higher resolution desktops
+	*/
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    /* 
+	  ##Device = Laptops, Desktops
+	  ##Screen = B/w 1025px to 1280px
+	*/
+
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* 
+	  ##Device = Tablets, Ipads (portrait)
+	  ##Screen = B/w 768px to 1024px
+	*/
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* 
+	  ##Device = Tablets, Ipads (landscape)
+	  ##Screen = B/w 768px to 1024px
+	*/
+
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    /* 
+	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+	  ##Screen = B/w 481px to 767px
+	*/
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* 
+	  ##Device = Most of the Smartphones Mobiles (Portrait)
+	  ##Screen = B/w 320px to 479px
+	*/
+
+}
