@@ -1,7 +1,7 @@
 .hero>.controllers {
     position: absolute;
     top: 50%;
-    z-index: 1;
+    z-index: 999;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -11,23 +11,43 @@
 .hero>.controllers>.hero_arrow_left {
     align-self: center;
     justify-self: start;
-    padding-left: 20px;
+    // padding-left: 20px;
+    position: sticky;
+    left:20px;
 }
 
 .hero>.controllers>.hero_arrow_right {
     align-self: center;
     justify-self: end;
-    padding-right: 20px;
+    // padding-right: 20px;
+    position: sticky;
+    right:20px;
 }
 
-.hero>.hero_item {
+.hero > .sliders__holder{
+    display: grid;
+    background-color: #fff;
+    height: 100%;
     position: relative;
-    height: 80vh;
-    // width: 100%;
-    // border: springgreen solid 3px;
+    grid-gap: .1rem;
+    justify-items: center;
+    align-items: center; 
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-.hero>.hero_item>.hero_item_image {
+.hero>.sliders__holder >.hero_item {
+    position: relative;
+    height: 100%;
+	width: 100vw;
+}
+
+.hero>.sliders__holder>.hero_item>.hero_item_image {
     position: absolute;
     top: 0;
     left: 0;
@@ -37,7 +57,7 @@
     width: 100%;
 }
 
-.hero>.hero_item>figcaption {
+.hero>.sliders__holder>.hero_item>figcaption {
     position: absolute;
     top: 0;
     left: 0;
@@ -51,7 +71,7 @@
     grid-template-areas: "pre_title""title""description""cta_btn";
 }
 
-.hero>.hero_item>figcaption>.pre_title {
+.hero>.sliders__holder>.hero_item>figcaption>.pre_title {
     grid-area: pre_title;
     // position: absolute;
     // width: 122px;
@@ -68,7 +88,7 @@
     padding-left: 80px;
 }
 
-.hero>.hero_item>figcaption>.title {
+.hero>.sliders__holder>.hero_item>figcaption>.title {
     grid-area: title;
     //position: absolute;
     // width: 266px;
@@ -85,7 +105,7 @@
     padding-left: 80px;
 }
 
-.hero>.hero_item>figcaption>.title>span {
+.hero>.sliders__holder>.hero_item>figcaption>.title>span {
     // position: absolute;
     // width: 266px;
     // height: 50px;
@@ -99,7 +119,7 @@
     color: #FFFFFF;
 }
 
-.hero>.hero_item>figcaption>.description {
+.hero>.sliders__holder>.hero_item>figcaption>.description {
     grid-area: description;
     // position: absolute;
     width: 45%;
@@ -118,7 +138,7 @@
 
 
 
-.hero>.hero_item>figcaption>.cta_btn {
+.hero>.sliders__holder>.hero_item>figcaption>.cta_btn {
     grid-area: cta_btn;
     @include cta_btn;
 	position: relative;
@@ -128,7 +148,7 @@
 
 }
 
-.hero>.hero_item>figcaption>._cta_btn {
+.hero>.sliders__holder>.hero_item>figcaption>._cta_btn {
     grid-area: cta_btn;
     // position: absolute;
     width: 98px;
@@ -213,21 +233,21 @@
 
 
 
-    .hero>.hero_item>figcaption>.pre_title {
+    .hero>.sliders__holder>.hero_item>figcaption>.pre_title {
 
         padding-left: 2.8rem;
     }
 
-    .hero>.hero_item>figcaption>.title {
+    .hero>.sliders__holder>.hero_item>figcaption>.title {
         padding-left: 2.8rem;
     }
 
-    .hero>.hero_item>figcaption>.description {
+    .hero>.sliders__holder>.hero_item>figcaption>.description {
         max-width: 75%;
         padding-left: 2.8rem;
     }
 
-    .hero>.hero_item>figcaption>.cta_btn {
+    .hero>.sliders__holder>.hero_item>figcaption>.cta_btn {
 
         left: 2.8rem;
     }

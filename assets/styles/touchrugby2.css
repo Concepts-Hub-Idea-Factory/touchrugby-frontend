@@ -607,7 +607,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 .hero > .controllers {
   position: absolute;
   top: 50%;
-  z-index: 1;
+  z-index: 999;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -623,7 +623,9 @@ header > .lower_menu__holder > ul > li.search_icon {
       align-self: center;
   -ms-grid-column-align: start;
       justify-self: start;
-  padding-left: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 20px;
 }
 
 .hero > .controllers > .hero_arrow_right {
@@ -632,15 +634,39 @@ header > .lower_menu__holder > ul > li.search_icon {
       align-self: center;
   -ms-grid-column-align: end;
       justify-self: end;
-  padding-right: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  right: 20px;
 }
 
-.hero > .hero_item {
+.hero > .sliders__holder {
+  display: -ms-grid;
+  display: grid;
+  background-color: #fff;
+  height: 100%;
   position: relative;
-  height: 80vh;
+  grid-gap: .1rem;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-auto-flow: column;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.hero > .hero_item > .hero_item_image {
+.hero > .sliders__holder > .hero_item {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+}
+
+.hero > .sliders__holder > .hero_item > .hero_item_image {
   position: absolute;
   top: 0;
   left: 0;
@@ -651,7 +677,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   width: 100%;
 }
 
-.hero > .hero_item > figcaption {
+.hero > .sliders__holder > .hero_item > figcaption {
   position: absolute;
   top: 0;
   left: 0;
@@ -667,7 +693,7 @@ header > .lower_menu__holder > ul > li.search_icon {
       grid-template-areas: "pre_title" "title" "description" "cta_btn";
 }
 
-.hero > .hero_item > figcaption > .pre_title {
+.hero > .sliders__holder > .hero_item > figcaption > .pre_title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: pre_title;
@@ -682,7 +708,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   padding-left: 80px;
 }
 
-.hero > .hero_item > figcaption > .title {
+.hero > .sliders__holder > .hero_item > figcaption > .title {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: title;
@@ -696,7 +722,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   padding-left: 80px;
 }
 
-.hero > .hero_item > figcaption > .title > span {
+.hero > .sliders__holder > .hero_item > figcaption > .title > span {
   font-family: Rock Salt;
   font-style: normal;
   font-weight: normal;
@@ -704,7 +730,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   color: #FFFFFF;
 }
 
-.hero > .hero_item > figcaption > .description {
+.hero > .sliders__holder > .hero_item > figcaption > .description {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: description;
@@ -718,7 +744,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   padding-left: 80px;
 }
 
-.hero > .hero_item > figcaption > .cta_btn {
+.hero > .sliders__holder > .hero_item > figcaption > .cta_btn {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: cta_btn;
@@ -739,7 +765,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   width: 10rem;
 }
 
-.hero > .hero_item > figcaption > ._cta_btn {
+.hero > .sliders__holder > .hero_item > figcaption > ._cta_btn {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: cta_btn;
@@ -798,17 +824,17 @@ header > .lower_menu__holder > ul > li.search_icon {
 	  ##Device = Most of the Smartphones Mobiles (Portrait)
 	  ##Screen = B/w 320px to 479px
 	*/
-  .hero > .hero_item > figcaption > .pre_title {
+  .hero > .sliders__holder > .hero_item > figcaption > .pre_title {
     padding-left: 2.8rem;
   }
-  .hero > .hero_item > figcaption > .title {
+  .hero > .sliders__holder > .hero_item > figcaption > .title {
     padding-left: 2.8rem;
   }
-  .hero > .hero_item > figcaption > .description {
+  .hero > .sliders__holder > .hero_item > figcaption > .description {
     max-width: 75%;
     padding-left: 2.8rem;
   }
-  .hero > .hero_item > figcaption > .cta_btn {
+  .hero > .sliders__holder > .hero_item > figcaption > .cta_btn {
     left: 2.8rem;
   }
 }
