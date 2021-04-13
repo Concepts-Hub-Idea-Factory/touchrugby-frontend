@@ -228,17 +228,42 @@ header>.lower_menu__holder>ul>li.search_icon {
 
 /* The navigation menu links */
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    // padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    font-size: 18px;
+    color: #fff;
     display: block;
     transition: 0.3s;
 }
 
+.sidenav ul>li{
+        padding: 8px 8px 8px 32px;
+
+}
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #f1f1f1;
+.sidenav ul>li>a:hover {
+    // color: #f1f1f1;
+    text-decoration: underline;
+    text-decoration-color: #EA215A;
+    // text-decoration-thickness: .125em;
+    text-decoration-thickness: .3rem;
+    text-underline-offset: 1.5px;
+}
+
+/*Button*/
+.sidenav ul>li>button {
+    // margin-left: 10%;
+    width: 6rem;
+    height: 2rem;
+    background: #07A358;
+    border-radius: 5px;
+    font-family: Rosario;
+    font-style: normal;
+    font-weight: 300;
+    font-size: .925rem;
+    line-height: 12px;
+    color: #FFFFFF;
+    border: none;
 }
 
 /* Position and style the close button (top right corner) */

@@ -389,18 +389,40 @@ header > .lower_menu__holder > ul > li.search_icon {
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 18px;
+  color: #fff;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
+.sidenav ul > li {
+  padding: 8px 8px 8px 32px;
+}
+
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav ul > li > a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #EA215A;
+          text-decoration-color: #EA215A;
+  text-decoration-thickness: .3rem;
+  text-underline-offset: 1.5px;
+}
+
+/*Button*/
+.sidenav ul > li > button {
+  width: 6rem;
+  height: 2rem;
+  background: #07A358;
+  border-radius: 5px;
+  font-family: Rosario;
+  font-style: normal;
+  font-weight: 300;
+  font-size: .925rem;
+  line-height: 12px;
+  color: #FFFFFF;
+  border: none;
 }
 
 /* Position and style the close button (top right corner) */
@@ -1138,46 +1160,13 @@ header > .lower_menu__holder > ul > li.search_icon {
   cursor: pointer;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
+@media screen and (max-width: 1200px) {
+  .footer__holder > div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    min-width: 80%;
+  }
   .footer__holder > div > ul > li {
     font-size: 14px;
   }

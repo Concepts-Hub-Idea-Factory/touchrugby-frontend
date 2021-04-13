@@ -187,7 +187,7 @@ section.blogs_images__holder {
     // height: auto;
     // grid-template-columns: repeat(2, auto);
     // grid-template-columns: repeat(auto-fit, minmax(50%, calc(100vw - (2*var(--pagePadding)) - 1rem)));
-    grid-template-columns: repeat(2,40vw);
+    grid-template-columns: repeat(2, 40vw);
     // grid-template-rows: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 1rem;
@@ -211,8 +211,6 @@ section.our_sponsors_images__holder {
     padding: var(--pagePadding);
     background-color: #fff;
     height: auto;
-    // grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    // grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
     grid-template-columns: repeat(auto-fit, 300px);
     grid-template-rows: auto;
     grid-gap: 5rem;
@@ -234,7 +232,7 @@ section.footer__holder {
     padding: var(--pagePadding);
     background-color: #000;
     // height: 50vh;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: 1fr;
 }
 
@@ -244,7 +242,8 @@ section.footer_credits__holder {
     background-color: #000;
     // height: 10vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr
+    grid-template-rows: 1fr;
+    border-top: solid white 0.0225rem;
 }
 
 
@@ -269,16 +268,26 @@ section.footer_credits__holder {
 
 
 @media screen and (max-width: 1200px) {
+    :root {
+        --pagePadding: 0 2rem 0 2rem;
+        --oneSidePadding: 2rem;
+    }
 
-section.blogs_images__holder {
-    display: grid;
-    padding: var(--pagePadding);
-    background-color: #fff;
-    grid-template-columns: repeat(auto-fit,100%);
-    grid-template-rows: 1fr;
-    grid-gap: 1rem;
-    justify-content: stretch;
-    align-items: stretch;
-    min-height: 50vh;
-}
+    section.blogs_images__holder {
+        display: grid;
+        padding: var(--pagePadding);
+        background-color: #fff;
+        grid-template-columns: repeat(auto-fit, 100%);
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        justify-content: stretch;
+        align-items: stretch;
+        min-height: 50vh;
+    }
+
+    section.footer__holder {
+        padding: 0;
+    }
+
+
 }

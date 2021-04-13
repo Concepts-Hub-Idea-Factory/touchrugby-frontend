@@ -255,8 +255,8 @@ section.footer__holder {
   display: grid;
   padding: var(--pagePadding);
   background-color: #000;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
 }
@@ -270,6 +270,7 @@ section.footer_credits__holder {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  border-top: solid white 0.0225rem;
 }
 
 header > .logo__holder {
@@ -540,18 +541,40 @@ header > .lower_menu__holder > ul > li.search_icon {
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 18px;
+  color: #fff;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
+.sidenav ul > li {
+  padding: 8px 8px 8px 32px;
+}
+
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav ul > li > a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #EA215A;
+          text-decoration-color: #EA215A;
+  text-decoration-thickness: .3rem;
+  text-underline-offset: 1.5px;
+}
+
+/*Button*/
+.sidenav ul > li > button {
+  width: 6rem;
+  height: 2rem;
+  background: #07A358;
+  border-radius: 5px;
+  font-family: Rosario;
+  font-style: normal;
+  font-weight: 300;
+  font-size: .925rem;
+  line-height: 12px;
+  color: #FFFFFF;
+  border: none;
 }
 
 /* Position and style the close button (top right corner) */
@@ -1896,6 +1919,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   height: 40vh;
   background: #FFFFFF;
   border-radius: 5px;
+  border: solid 1px grey;
 }
 
 .what_is_touch_rugby__holder > .text__holder > div > .separator {
@@ -1918,6 +1942,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
+  text-align: center;
 }
 
 .what_is_touch_rugby__holder > .text__holder > div > .title > span {
@@ -1965,46 +1990,19 @@ header > .lower_menu__holder > ul > li.search_icon {
       align-self: center;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
+@media screen and (max-width: 1200px) {
+  .what_is_touch_rugby__holder > .img__holder {
+    height: auto;
+  }
+  .what_is_touch_rugby__holder > .text__holder > div {
+    margin: 10px;
+    opacity: .8;
+  }
+  .what_is_touch_rugby__holder > .text__holder {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-column: 3/7;
+  }
 }
 
 .blogs_text__holder > .title {
@@ -2325,46 +2323,13 @@ header > .lower_menu__holder > ul > li.search_icon {
   cursor: pointer;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
+@media screen and (max-width: 1200px) {
+  .footer__holder > div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    min-width: 80%;
+  }
   .footer__holder > div > ul > li {
     font-size: 14px;
   }
@@ -2424,6 +2389,10 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 @media screen and (max-width: 1200px) {
+  :root {
+    --pagePadding: 0 2rem 0 2rem;
+    --oneSidePadding: 2rem;
+  }
   section.blogs_images__holder {
     display: -ms-grid;
     display: grid;
@@ -2431,8 +2400,8 @@ header > .lower_menu__holder > ul > li.search_icon {
     background-color: #fff;
     -ms-grid-columns: (100%)[auto-fit];
         grid-template-columns: repeat(auto-fit, 100%);
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
     grid-gap: 1rem;
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
@@ -2441,6 +2410,9 @@ header > .lower_menu__holder > ul > li.search_icon {
         -ms-flex-align: stretch;
             align-items: stretch;
     min-height: 50vh;
+  }
+  section.footer__holder {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=touchrugby2.css.map */
