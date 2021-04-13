@@ -54,13 +54,13 @@ section.upcoming_events_scroller {
 
 ;
 
-section.upcoming_events__holder { 
+section.upcoming_events__holder {
     display: grid;
     padding: var(--pagePadding);
     background-color: #fff;
     grid-gap: 5rem;
     justify-items: center;
-    align-items: center; 
+    align-items: center;
     grid-auto-flow: column;
     overflow-x: scroll;
     scroll-snap-type: x proximity;
@@ -126,8 +126,8 @@ section.our_journey_images__holder {
     display: grid;
     padding: var(--pagePadding);
     min-height: 50vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
     grid-gap: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -149,8 +149,11 @@ section.game_for_everyone_images__holder {
     padding: var(--pagePadding);
     background-color: #fff;
     min-height: 70vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr;
+
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    grid-template-rows: auto auto;
     grid-gap: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -181,12 +184,17 @@ section.blogs_images__holder {
     display: grid;
     padding: var(--pagePadding);
     background-color: #fff;
-    // height: 10vh;
-    height: auto;
-    grid-template-columns: 1fr 1fr;
+    // height: auto;
+    // grid-template-columns: repeat(2, auto);
+    // grid-template-columns: repeat(auto-fit, minmax(50%, calc(100vw - (2*var(--pagePadding)) - 1rem)));
+    grid-template-columns: repeat(2,40vw);
+    // grid-template-rows: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 1rem;
-    justify-content: center;
+    // justify-content: center;
+    justify-content: stretch;
+    align-items: stretch;
+    min-height: 50vh;
 }
 
 section.our_sponsors_text__holder {
@@ -206,7 +214,7 @@ section.our_sponsors_images__holder {
     // grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     // grid-template-columns: repeat(auto-fit, minmax(300px, 600px));
     grid-template-columns: repeat(auto-fit, 300px);
-    grid-template-rows: 1fr;
+    grid-template-rows: auto;
     grid-gap: 5rem;
     justify-content: center;
     place-items: center;
@@ -260,76 +268,17 @@ section.footer_credits__holder {
 @import './sass/elements/pages/common/_section.footer_credits__holder.scss';
 
 
-//Responsive Web Design - Quirkmode
+@media screen and (max-width: 1200px) {
 
-@media (min-width: 1281px) {
-
-    /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
+section.blogs_images__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    grid-template-columns: repeat(auto-fit,100%);
+    grid-template-rows: 1fr;
+    grid-gap: 1rem;
+    justify-content: stretch;
+    align-items: stretch;
+    min-height: 50vh;
 }
-
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-    /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-
-
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-    /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-    :root {
-        // --pagePadding: 0 121px 0 121px;
-        // --oneSidePadding: 121px;
-        --pagePadding: 0 2rem 0 2rem;
-        --oneSidePadding: 2rem;
-    }
-
-    header {
-        display: grid;
-        background-color: #000;
-        height: 10vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "logo__holder sidemenu__holder";
-        ;
-    }
 }

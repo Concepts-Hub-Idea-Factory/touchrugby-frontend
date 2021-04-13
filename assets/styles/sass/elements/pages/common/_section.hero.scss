@@ -1,7 +1,7 @@
 .hero>.controllers {
     position: absolute;
     top: 50%;
-    z-index: 999;
+    z-index: 1;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,7 +13,7 @@
     justify-self: start;
     // padding-left: 20px;
     position: sticky;
-    left:20px;
+    left: 20px;
 }
 
 .hero>.controllers>.hero_arrow_right {
@@ -21,17 +21,17 @@
     justify-self: end;
     // padding-right: 20px;
     position: sticky;
-    right:20px;
+    right: 20px;
 }
 
-.hero > .sliders__holder{
+.hero>.sliders__holder {
     display: grid;
     background-color: #fff;
     height: 100%;
     position: relative;
     grid-gap: .1rem;
     justify-items: center;
-    align-items: center; 
+    align-items: center;
     grid-auto-flow: column;
     overflow-x: scroll;
     scroll-snap-type: x proximity;
@@ -41,10 +41,10 @@
     -ms-overflow-style: none;
 }
 
-.hero>.sliders__holder >.hero_item {
+.hero>.sliders__holder>.hero_item {
     position: relative;
     height: 100%;
-	width: 100vw;
+    width: 100vw;
 }
 
 .hero>.sliders__holder>.hero_item>.hero_item_image {
@@ -141,10 +141,10 @@
 .hero>.sliders__holder>.hero_item>figcaption>.cta_btn {
     grid-area: cta_btn;
     @include cta_btn;
-	position: relative;
+    position: relative;
     left: 5rem;
-	top:2rem;
-	width:10rem;
+    top: 2rem;
+    width: 10rem;
 
 }
 

@@ -135,10 +135,10 @@ section.our_journey_images__holder {
   display: grid;
   padding: var(--pagePadding);
   min-height: 50vh;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -162,10 +162,10 @@ section.game_for_everyone_images__holder {
   padding: var(--pagePadding);
   background-color: #fff;
   min-height: 70vh;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: (minmax(18.75rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
   grid-gap: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -199,15 +199,18 @@ section.blogs_images__holder {
   display: grid;
   padding: var(--pagePadding);
   background-color: #fff;
-  height: auto;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (40vw)[2];
+      grid-template-columns: repeat(2, 40vw);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
   grid-gap: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  min-height: 50vh;
 }
 
 section.our_sponsors_text__holder {
@@ -230,8 +233,8 @@ section.our_sponsors_images__holder {
   height: auto;
   -ms-grid-columns: (300px)[auto-fit];
       grid-template-columns: repeat(auto-fit, 300px);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 5rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -287,10 +290,6 @@ header > .logo__holder > .logo {
   height: 60%;
 }
 
-header > .sidemenu__holder {
-  display: none;
-}
-
 header > .upper_menu__holder {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -334,7 +333,7 @@ header > .upper_menu__holder > ul > li.username {
   font-weight: 300;
   font-size: 14px;
   line-height: 12px;
-  color: #000000;
+  color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -363,7 +362,7 @@ header > .upper_menu__holder > ul > li.phone {
   font-weight: 300;
   font-size: 14px;
   line-height: 14px;
-  color: #000000;
+  color: #fff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -515,49 +514,103 @@ header > .lower_menu__holder > ul > li.search_icon {
       justify-self: center;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
+/* The side navigation menu */
+.sidenav {
+  height: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 2;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  right: 0;
+  background-color: #111;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidenav */
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  -webkit-transition: margin-left .5s;
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
+.sidemenu__holder {
+  display: none;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --pagePadding: 0 2rem 0 2rem;
+    --oneSidePadding: 2rem;
+  }
+  .sidemenu__holder > img {
+    max-width: 1.875rem;
+  }
+  header {
+    display: -ms-grid;
+    display: grid;
+    background-color: #000;
+    height: 10vh;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "logo__holder sidemenu__holder";
+  }
+  .upper_menu__holder {
+    display: none !important;
+  }
+  .lower_menu__holder {
+    display: none !important;
+  }
   header > .logo__holder {
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: logo__holder;
     display: -ms-grid;
@@ -607,7 +660,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 .hero > .controllers {
   position: absolute;
   top: 50%;
-  z-index: 999;
+  z-index: 1;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -853,6 +906,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   -ms-flex-item-align: center;
       align-self: center;
   margin-top: 5rem;
+  text-align: center;
 }
 
 .about__holder > .separator {
@@ -1074,6 +1128,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   -ms-flex-item-align: center;
       align-self: center;
   margin-top: 5rem;
+  text-align: center;
 }
 
 .player_of_the_season_text__holder > .title > span {
@@ -1525,7 +1580,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .our_journey_images__holder > div {
-  height: 100%;
+  min-height: 300px;
   border-radius: 5px;
   display: -ms-grid;
   display: grid;
@@ -1607,6 +1662,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   -ms-flex-item-align: center;
       align-self: center;
   margin-top: 5rem;
+  text-align: center;
 }
 
 .game_for_everyone_text__holder > .title > span {
@@ -1711,7 +1767,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .game_for_everyone_images__holder > div {
-  height: 100%;
+  min-height: 18.75rem;
   border-radius: 5px;
   display: -ms-grid;
   display: grid;
@@ -2047,30 +2103,22 @@ header > .lower_menu__holder > ul > li.search_icon {
       grid-template-rows: 4fr 6fr 1fr 3fr;
       grid-template-areas: "." "title" "location" "description";
   padding: 0 1rem 0 2rem;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .blogs_images__holder > .touch_nanyuki {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 450px;
-  height: 450px;
   background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/touch_nanyuki.svg) no-repeat;
   background-size: cover;
   border-radius: 5px;
-  -ms-grid-column-align: end;
-      justify-self: end;
 }
 
 .blogs_images__holder > .touch_kisumu {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  width: 450px;
-  height: 450px;
   background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/touch_kisumu.svg) no-repeat;
   background-size: cover;
   border-radius: 5px;
-  -ms-grid-column-align: start;
-      justify-self: start;
 }
 
 .blogs_images__holder > div > .title {
@@ -2375,60 +2423,24 @@ header > .lower_menu__holder > ul > li.search_icon {
 	*/
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-  :root {
-    --pagePadding: 0 2rem 0 2rem;
-    --oneSidePadding: 2rem;
-  }
-  header {
+@media screen and (max-width: 1200px) {
+  section.blogs_images__holder {
     display: -ms-grid;
     display: grid;
-    background-color: #000;
-    height: 10vh;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    -ms-grid-columns: (100%)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 100%);
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas: "logo__holder sidemenu__holder";
+    grid-gap: 1rem;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    min-height: 50vh;
   }
 }
 /*# sourceMappingURL=touchrugby2.css.map */

@@ -11,9 +11,9 @@ header>.logo__holder>.logo {
     height: 60%;
 }
 
-header>.sidemenu__holder {
-    display: none;
-}
+// header>.sidemenu__holder {
+//     display: none;
+// }
 
 header>.upper_menu__holder {
     grid-area: upper_menu__holder;
@@ -45,7 +45,7 @@ header>.upper_menu__holder>ul>li.username {
     font-weight: 300;
     font-size: 14px;
     line-height: 12px;
-    color: #000000;
+    color: #fff;
     align-items: center;
 }
 
@@ -74,7 +74,7 @@ header>.upper_menu__holder>ul>li.phone {
     font-weight: 300;
     font-size: 14px;
     line-height: 14px;
-    color: #000000;
+    color: #fff;
     align-items: center;
 }
 
@@ -124,7 +124,7 @@ header>.lower_menu__holder>ul.second_half {
 header>.lower_menu__holder>ul {
     display: grid;
     // grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 1.3fr 1fr;
-	grid-template-columns: repeat(8,auto);
+    grid-template-columns: repeat(8, auto);
     grid-template-rows: auto;
     padding-right: var(--oneSidePadding);
     align-items: center;
@@ -149,12 +149,12 @@ header>.lower_menu__holder>ul>li>a {
 
 
 header>.lower_menu__holder>ul>li>a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
     text-decoration-color: #EA215A;
     // text-decoration-thickness: .125em;
-	text-decoration-thickness:.3rem;
+    text-decoration-thickness: .3rem;
     text-underline-offset: 1.5px;
-	
+
 }
 
 header>.lower_menu__holder>ul>li.Home {
@@ -200,62 +200,112 @@ header>.lower_menu__holder>ul>li.search_icon {
 
 
 
-//Responsive Web Design - Quirkmode
 
-@media (min-width: 1281px) {
+//Responsive Web Design - Quirkmode 
 
-    /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 2;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
 }
 
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-    /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-
-
+.sidemenu__holder {
+    display: none;
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
 
-    /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
+    .sidenav a {
+        font-size: 18px;
+    }
 }
 
 
 
-@media (min-width: 320px) and (max-width: 480px) {
-    /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
+@media screen and (max-width: 1200px) {
 
+    :root {
+        // --pagePadding: 0 121px 0 121px;
+        // --oneSidePadding: 121px;
+        --pagePadding: 0 2rem 0 2rem;
+        --oneSidePadding: 2rem;
+    }
 
+    .sidemenu__holder>img {
+        max-width: 1.875rem;
+    }
+
+    header {
+        display: grid;
+        background-color: #000;
+        height: 10vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "logo__holder sidemenu__holder";
+        ;
+    }
+
+    .upper_menu__holder {
+        display: none !important;
+    }
+
+    .lower_menu__holder {
+        display: none !important;
+    }
 
 
     header>.logo__holder {
@@ -299,10 +349,6 @@ header>.lower_menu__holder>ul>li.search_icon {
         grid-area: lower_menu__holder;
         display: grid;
         grid-template-columns: auto;
-        // grid-template-columns: 3fr 7fr;
-        // grid-template-rows: 1fr;
-        // grid-template-areas: "first_half second_half";
-        // padding-right: var(--oneSidePadding);
     }
-    
+
 }
