@@ -10,6 +10,31 @@
 </head>
 
 <body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <ul class="second_half">
+            <li class="Home"><a href=""> Home</a></li>
+            <li class="News"><a href="">About TRC</a></li>
+            <li class="About"><a href="">News</a></li>
+            <li class="What_Is_Touch_Rugby"><a href="">Learn</a></li>
+            <li class="Sponsorship"><a href="">Sponsorship</a></li>
+            <li class="Contacts"><a href="">Contact Us</a></li>
+            <li class="search_icon"><a href=""><img src="./assets/images/search_vector_icon.svg" alt=""></a></li>
+            <li class="username">
+                <a href=""> <img src="./assets/images/trc_message_vector_icon.svg"
+                        alt="">&nbsp;<span>@TouchRugbyCentral</span>
+                </a>
+            </li>
+            <li class="phone">
+                <a href=""> <img src="./assets/images/trc_phone_vector_icon.svg" alt=""> &nbsp;<span>0702 281 871</span>
+                </a>
+            </li>
+            <li class="cta_btn__holder">
+                <button class="cta_btn">Play</button>
+            </li>
+        </ul>
+    </div>
+
     <div>
         <header>
             <div class="logo__holder">
@@ -24,7 +49,7 @@
                         <img src="./assets/images/trc_phone_vector_icon.svg" alt=""> <span>0702 281 871</span>
                     </li>
                     <li class="cta_btn__holder">
-                        <button class="cta_btn">Join Online</button>
+                        <button class="cta_btn">Play</button>
                     </li>
                 </ul>
             </div>
@@ -32,61 +57,75 @@
                 <div class="first_half"></div>
                 <ul class="second_half">
                     <li class="Home"><a href=""> Home</a></li>
-                    <li class="News"><a href="">News</a></li>
-                    <li class="About"><a href="">About</a></li>
-                    <li class="What_Is_Touch_Rugby"><a href="">What Is Touch Rugby</a></li>
+                    <li class="News"><a href="">About TRC</a></li>
+                    <li class="About"><a href="">News</a></li>
+                    <li class="What_Is_Touch_Rugby"><a href="">Learn</a></li>
                     <li class="Sponsorship"><a href="">Sponsorship</a></li>
-                    <li class="Rules"><a href="">Rules</a></li>
-                    <li class="Contacts"><a href="">Contacts</a></li>
+                    <li class="Contacts"><a href="">Contact Us</a></li>
                     <li class="search_icon"><img src="./assets/images/search_vector_icon.svg" alt=""></li>
 
                 </ul>
             </div>
 
-            <div class="sidemenu__holder">
+            <div class="sidemenu__holder" onclick="openNav()">
                 <img src="./assets/images/menu_icon_hambager_closed_1.svg" alt="" class="menu_icon_hambager_closed">
             </div>
+
+            <!-- <span class="sidemenu__holder" >open</span> -->
         </header>
+
         <section class="hero">
             <div class="controllers">
                 <img src="./assets/images/hero_arrow_left.svg" class="hero_arrow_left" alt="">
                 <img src="./assets/images/hero_arrow_right.svg" class="hero_arrow_right" alt="">
             </div>
-            <figure class="hero_item">
-                <img class="hero_item_image" src="./assets/images/hero_trc.svg" alt="">
-                <figcaption>
-                    <p class="pre_title">MATCH OVERVIEW</p>
-                    <p class="title"><span>TOUCH</span> MACHAKOS</p>
-                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud exercitation
-                        ullamco aboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-                    <button class="cta_btn">Explore Pitch Layout</button>
-                </figcaption>
-            </figure>
+            <div class="sliders__holder">
 
+                <figure class="hero_item">
+                    <img class="hero_item_image" src="./assets/images/hero_trc.svg" alt="">
+                    <figcaption>
+                        <p class="pre_title">1 MATCH OVERVIEW</p>
+                        <p class="title"><span>TOUCH</span> <strong>MACHAKOS</strong></p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua.
+                            <!--Ut enim ad minim veniam, quisnostrud exercitation
+                            ullamco aboris nisi ut aliquip ex ea commodo consequat. Duis aute-->
+                        </p>
+                        <button class="cta_btn">Explore Pitch Layout</button>
+                    </figcaption>
+                </figure>
 
-            <!-- <figure class="hero_item">
-            <img class="hero_item_image" src="./assets/images/hero_trc.svg" alt="">
-            <figcaption>
-                <p>MATCH OVERVIEW</p>
-                <p>TOUCH MACHAKOS</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud exercitation ullamco aboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-                <button>Explore Pitch Layout</button>
-            </figcaption>
-        </figure>
+                <figure class="hero_item">
+                    <img class="hero_item_image" src="./assets/images/hero_trc.svg" alt="">
+                    <figcaption>
+                        <p class="pre_title">2 MATCH OVERVIEW</p>
+                        <p class="title"><span>TOUCH</span> <strong>MACHAKOS</strong></p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua.
+                            <!--Ut enim ad minim veniam, quisnostrud exercitation
+                            ullamco aboris nisi ut aliquip ex ea commodo consequat. Duis aute-->
+                        </p>
+                        <button class="cta_btn">Explore Pitch Layout</button>
+                    </figcaption>
+                </figure>
 
-        
-        <figure class="hero_item">
-            <img class="hero_item_image" src="./assets/images/hero_trc.svg" alt="">
-            <figcaption>
-                <p>MATCH OVERVIEW</p>
-                <p>TOUCH MACHAKOS</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quisnostrud exercitation ullamco aboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
-                <button>Explore Pitch Layout</button>
-            </figcaption>
-        </figure> -->
-
+                <figure class="hero_item">
+                    <img class="hero_item_image" src="./assets/images/hero_trc.svg" alt="">
+                    <figcaption>
+                        <p class="pre_title">3 MATCH OVERVIEW</p>
+                        <p class="title"><span>TOUCH</span> <strong>MACHAKOS</strong></p>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor
+                            incididunt ut labore et dolore magna aliqua.
+                            <!--Ut enim ad minim veniam, quisnostrud exercitation
+                            ullamco aboris nisi ut aliquip ex ea commodo consequat. Duis aute-->
+                        </p>
+                        <button class="cta_btn">Explore Pitch Layout</button>
+                    </figcaption>
+                </figure>
+            </div>
 
         </section>
 

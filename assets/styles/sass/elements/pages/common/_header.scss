@@ -17,7 +17,7 @@ header>.logo__holder>.logo {
 
 header>.upper_menu__holder {
     grid-area: upper_menu__holder;
-    background: url(./assets/images/upper_menu__holder_bg.svg);
+    background: url(../images/upper_menu__holder_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
@@ -45,7 +45,7 @@ header>.upper_menu__holder>ul>li.username {
     font-weight: 300;
     font-size: 14px;
     line-height: 12px;
-    color: #fff;
+    color: #000;
     align-items: center;
 }
 
@@ -74,7 +74,7 @@ header>.upper_menu__holder>ul>li.phone {
     font-weight: 300;
     font-size: 14px;
     line-height: 14px;
-    color: #fff;
+    color: #000;
     align-items: center;
 }
 
@@ -106,11 +106,10 @@ header>.upper_menu__holder>ul>li>button.cta_btn {
 header>.lower_menu__holder {
     grid-area: lower_menu__holder;
     display: grid;
-    grid-template-columns: 3fr 7fr;
+
+    grid-template-columns: .1fr 9.9fr;
     grid-template-rows: auto;
     grid-template-areas: "first_half second_half";
-    // padding-right: var(--oneSidePadding);
-    // margin-bottom:5rem;
 }
 
 header>.lower_menu__holder>div.first_half {
@@ -145,6 +144,7 @@ header>.lower_menu__holder>ul>li>a {
     font-size: 1rem;
     // line-height: 0.5rem;
     color: #FFFFFF;
+    text-transform: uppercase;
 }
 
 
@@ -230,7 +230,7 @@ header>.lower_menu__holder>ul>li.search_icon {
 .sidenav a {
     // padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     display: block;
     transition: 0.3s;

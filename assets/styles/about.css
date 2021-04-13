@@ -132,7 +132,7 @@ header > .upper_menu__holder {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: upper_menu__holder;
-  background: url(./assets/images/upper_menu__holder_bg.svg);
+  background: url(../images/upper_menu__holder_bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   display: -ms-grid;
@@ -171,7 +171,7 @@ header > .upper_menu__holder > ul > li.username {
   font-weight: 300;
   font-size: 14px;
   line-height: 12px;
-  color: #fff;
+  color: #000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -200,7 +200,7 @@ header > .upper_menu__holder > ul > li.phone {
   font-weight: 300;
   font-size: 14px;
   line-height: 14px;
-  color: #fff;
+  color: #000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -236,8 +236,8 @@ header > .lower_menu__holder {
   grid-area: lower_menu__holder;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 7fr;
-      grid-template-columns: 3fr 7fr;
+  -ms-grid-columns: .1fr 9.9fr;
+      grid-template-columns: .1fr 9.9fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
       grid-template-areas: "first_half second_half";
@@ -278,6 +278,7 @@ header > .lower_menu__holder > ul > li > a {
   font-weight: normal;
   font-size: 1rem;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 header > .lower_menu__holder > ul > li > a:hover {
@@ -379,7 +380,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 /* The navigation menu links */
 .sidenav a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   display: block;
   -webkit-transition: 0.3s;
