@@ -6,19 +6,15 @@
   font-size: 1.5rem;
   line-height: 1.75rem;
   text-transform: uppercase;
-
   color: #FFFFFF;
-
   justify-self: center;
-  align-self: center;
-  margin-top: var(--upDownPadding);
+  align-self: end;
 }
 
 .thegame_text__holder>.separator {
   grid-area: separator;
   justify-self: center;
   align-self: center;
-
 }
 
 .thegame_text__holder>.description {
@@ -31,69 +27,11 @@
   text-align: center;
   color: #FFFFFF;
   justify-self: center;
-  align-self: start;
-  margin-top: var(--upDownPadding);
   @include description_text;
   font-weight: normal;
-
 }
 
 
 
 
 //Responsive Web Design - Quirkmode
-
-@media (min-width: 1281px) {
-
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-
-
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-
-}

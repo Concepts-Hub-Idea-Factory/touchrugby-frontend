@@ -25,92 +25,26 @@
 // .trc_rules_text__holder>div>.description {
 .trc_rules_text__holder>.description {
     grid-area: description;
-    // font-family: Roboto;
-    // font-style: normal;
-    // font-weight: normal;
-    // font-size: 16px;
-    // line-height: 24px;
-    // text-align: center;
-    // color: #000000;
-    // justify-self: center;
-    // align-self: center;
-    // margin-bottom: 5rem;
 
     width: 70%;
     font-family: Roboto;
     font-style: normal;
-    // font-size: 0.625rem;
-    // line-height: 0.75rem;
     text-align: center;
     color: #000000;
-
     justify-self: center;
-    align-self: center;
-    // margin-bottom: 5rem;
-
-    margin-top: var(--upDownPadding);
-
+    align-self: start;
     @include description_text;
     font-weight: normal;
 
 }
 
 
-
-
 //Responsive Web Design - Quirkmode
 
-@media (min-width: 1281px) {
 
-    /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-    /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-
-
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-
-
-@media (min-width: 320px) and (max-width: 480px) {
-    /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-
+@media screen and (max-width: 1200px) {
+  :root {
+      --pagePadding: 0 2rem 0 2rem;
+      --oneSidePadding: 2rem;
+  }
 }

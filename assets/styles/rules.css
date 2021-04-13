@@ -44,16 +44,16 @@ section.trc_rules_text__holder {
 }
 
 section.trc_rules_cards__holder {
+  background-color: #fff;
   display: -ms-grid;
   display: grid;
   padding: var(--pagePadding);
-  background-color: #fff;
-  min-height: 50vh;
-  -ms-grid-columns: (minmax(18.75rem, auto))[3];
-      grid-template-columns: repeat(3, minmax(18.75rem, auto));
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  -ms-grid-columns: (minmax(300px, auto))[3];
+      grid-template-columns: repeat(3, minmax(300px, auto));
   grid-gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-items: center;
 }
 
 section.thegame_text__holder {
@@ -66,7 +66,7 @@ section.thegame_text__holder {
   -ms-grid-rows: 4fr 1fr 4fr;
       grid-template-rows: 4fr 1fr 4fr;
       grid-template-areas: "title" "separator" "description";
-  background-image: url(./assets/images/the_game_bg.svg);
+  background-image: url(../images/the_game_bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: calc(var(--upDownPadding) - 3rem);
@@ -84,6 +84,21 @@ section.howtoplay_text__holder {
       grid-template-areas: "title" "separator" "description";
 }
 
+section.test_howtoplay_cards__holder {
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  padding: var(--pagePadding);
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (auto)[3];
+      grid-template-rows: repeat(3, auto);
+  grid-gap: 3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  justify-items: center;
+}
+
 section.howtoplay_cards__holder {
   background-color: #fff;
   display: -ms-grid;
@@ -93,7 +108,7 @@ section.howtoplay_cards__holder {
       grid-template-columns: 1fr;
   -ms-grid-rows: (auto)[3];
       grid-template-rows: repeat(3, auto);
-  grid-gap: 1rem;
+  grid-gap: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   justify-items: center;
@@ -634,7 +649,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .hero > .sliders__holder > .hero_item > figcaption > .title {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
   font-family: Roboto;
@@ -656,7 +671,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .hero > .sliders__holder > .hero_item > figcaption > .description {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: description;
   width: 45%;
@@ -765,7 +780,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .trc_rules_text__holder > .title {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
   font-family: Roboto;
@@ -790,7 +805,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .trc_rules_text__holder > .description {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: description;
   width: 70%;
@@ -799,54 +814,18 @@ header > .lower_menu__holder > ul > li.search_icon {
   text-align: center;
   color: #000000;
       justify-self: center;
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin-top: var(--upDownPadding);
+  -ms-flex-item-align: start;
+      align-self: start;
   font-size: 1.3rem;
   line-height: 1.7rem;
   font-weight: normal;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
+@media screen and (max-width: 1200px) {
+  :root {
+    --pagePadding: 0 2rem 0 2rem;
+    --oneSidePadding: 2rem;
+  }
 }
 
 .trc_rules_cards__holder > .card {
@@ -873,7 +852,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .trc_rules_cards__holder > .card > .title {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
   font-family: Roboto;
@@ -891,7 +870,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .trc_rules_cards__holder > .card > .description {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: description;
   font-family: Roboto;
@@ -902,63 +881,79 @@ header > .lower_menu__holder > ul > li.search_icon {
   color: #000000;
 }
 
-.howtoplay_cards__holder > .card {
+.howtoplay_cards__holder > * {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-gap: 2rem;
-      grid-template-areas: "card_img card_info";
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 9fr;
+      grid-template-rows: 1fr 9fr;
+  grid-gap: 1rem;
 }
 
-.howtoplay_cards__holder > .card_swapped {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
-  grid-gap: 2rem;
-      grid-template-areas: "card_info card_img";
+.howtoplay_cards__holder > .card_img__left {
+      grid-template-areas: "card_img title" "card_img description";
 }
 
-.howtoplay_cards__holder > div > .card_img {
+.howtoplay_cards__holder > .card_img__right {
+      grid-template-areas: "title card_img" "description card_img";
+}
+
+.howtoplay_cards__holder > * > .card_img {
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: card_img;
   width: 100%;
   height: 100%;
 }
 
-.howtoplay_cards__holder > div > .card_info {
+.howtoplay_cards__holder > * > .title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: card_info;
-}
-
-.howtoplay_cards__holder > div > .card_info > .title {
+  grid-area: title;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.5rem;
-  line-height: 28px;
+  font-size: 2rem;
   color: #000000;
 }
 
-.howtoplay_cards__holder > div > .card_info > .description {
-  width: 70%;
+.howtoplay_cards__holder > * > .description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: description;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-align: justify;
   color: #000000;
 }
 
+@media screen and (max-width: 1200px) {
+  .howtoplay_cards__holder > * {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    grid-gap: 1rem;
+  }
+  .howtoplay_cards__holder > .card_img__left {
+        grid-template-areas: "title" "card_img" "description";
+  }
+  .howtoplay_cards__holder > .card_img__right {
+        grid-template-areas: "title" "card_img" "description";
+  }
+  .howtoplay_cards__holder > * > * {
+    text-align: center;
+  }
+}
+
 .howtoplay_text__holder > .title {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
   font-family: Roboto;
@@ -987,7 +982,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .howtoplay_text__holder > .description {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: description;
   width: 70%;
@@ -997,59 +992,16 @@ header > .lower_menu__holder > ul > li.search_icon {
   color: #000000;
   -ms-grid-column-align: center;
       justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: var(--upDownPadding);
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   font-size: 1.3rem;
   line-height: 1.7rem;
   font-weight: normal;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-}
-
 .thegame_text__holder > .title {
-  -ms-grid-row: 2;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
   font-family: Roboto;
@@ -1061,10 +1013,9 @@ header > .lower_menu__holder > ul > li.search_icon {
   color: #FFFFFF;
   -ms-grid-column-align: center;
       justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  margin-top: var(--upDownPadding);
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 .thegame_text__holder > .separator {
@@ -1079,7 +1030,7 @@ header > .lower_menu__holder > ul > li.search_icon {
 }
 
 .thegame_text__holder > .description {
-  -ms-grid-row: 4;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: description;
   width: 50%;
@@ -1091,55 +1042,9 @@ header > .lower_menu__holder > ul > li.search_icon {
   color: #FFFFFF;
   -ms-grid-column-align: center;
       justify-self: center;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
-  margin-top: var(--upDownPadding);
   font-size: 1.3rem;
   line-height: 1.7rem;
   font-weight: normal;
-}
-
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
 }
 
 .footer__holder > div {
@@ -1226,60 +1131,24 @@ header > .lower_menu__holder > ul > li.search_icon {
 	*/
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
+@media screen and (max-width: 1200px) {
   :root {
     --pagePadding: 0 2rem 0 2rem;
     --oneSidePadding: 2rem;
   }
-  header {
+  section.trc_rules_cards__holder {
+    background-color: #fff;
     display: -ms-grid;
     display: grid;
-    background-color: #000;
-    height: 10vh;
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "logo__holder sidemenu__holder";
+    padding: var(--pagePadding);
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    grid-gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-items: center;
   }
 }
 /*# sourceMappingURL=rules.css.map */
