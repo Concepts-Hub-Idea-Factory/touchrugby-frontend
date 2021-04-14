@@ -66,10 +66,11 @@ section.the_team_card__holder {
 
     padding: var(--pagePadding);
     background: #07A358;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 50%));
-    grid-template-rows: repeat(auto-fit, auto);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit,auto);
     padding-top: var(--sectionMarginTop);
     padding-bottom: var(--sectionMarginTop);
+    grid-gap: 5rem;
 }
 
 section.full_intro__holder {
@@ -111,76 +112,31 @@ section.footer_credits__holder {
 @import './sass/elements/pages/common/_section.footer__holder.scss';
 @import './sass/elements/pages/common/_section.footer_credits__holder.scss';
 
+
 //Responsive Web Design - Quirkmode
-
-@media (min-width: 1281px) {
-
-    /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-    /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-
-
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-
-
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-    /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
+@media screen and (max-width: 1200px) {
     :root {
-        // --pagePadding: 0 121px 0 121px;
-        // --oneSidePadding: 121px;
         --pagePadding: 0 2rem 0 2rem;
         --oneSidePadding: 2rem;
     }
 
-    header {
+
+    section.the_team_card__holder {
         display: grid;
-        background-color: #000;
-        height: 10vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-            "logo__holder sidemenu__holder";
-        ;
+        padding: var(--pagePadding);
+        background: #07A358;
+        grid-template-columns:1fr;
+        grid-template-columns: repeat(auto-fit,auto);
+        grid-gap:5rem;
+        padding-bottom: var(--sectionMarginTop);
     }
+    
+section.summary_intro__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+
 }

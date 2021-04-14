@@ -1,5 +1,5 @@
 .summary_intro__holder>.topic {
-    width:60%;
+    width: 60%;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -16,4 +16,13 @@
     // line-height: 1rem;
     text-align: justify;
     color: #000000;
+}
+
+
+//Responsive Web Design - Quirkmode
+@media screen and (max-width: 1200px) {
+    .summary_intro__holder>.topic {
+        font-size: 4rem;
+    }
+
 }
