@@ -1,6 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   --pagePadding: 0 7.563rem 0 7.563rem;
   --oneSidePadding: 7.563rem;
@@ -921,48 +922,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   font-weight: normal;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-}
-
 .upcoming_events__holder > .event {
   position: relative;
   height: 25rem;
@@ -1057,48 +1016,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   margin-left: 20px;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-}
-
 .player_of_the_season_text__holder > .title {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -1151,48 +1068,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   font-size: 1.3rem;
   line-height: 1.7rem;
   font-weight: normal;
-}
-
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
 }
 
 .player_of_the_season_images__holder > .img__holder > img {
@@ -1251,90 +1126,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   line-height: 12px;
   color: #FFFFFF;
   border: none;
-}
-
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-}
-
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
 }
 
 .medals_list__holder > div {
@@ -1417,48 +1208,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   text-align: center;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-}
-
 .our_journey_text__holder > .title {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -1504,48 +1253,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   font-weight: normal;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-}
-
 .our_journey_images__holder > div > p {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -1589,48 +1296,6 @@ header > .lower_menu__holder > ul > li.search_icon {
 .our_journey_images__holder > .our_journey__extreme_level_of_sports_c {
   background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/our_journey__extreme_level_of_sports_c.svg) no-repeat;
   background-size: cover;
-}
-
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
 }
 
 .game_for_everyone_text__holder > .title {
@@ -1691,48 +1356,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   font-weight: normal;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-}
-
 .game_for_everyone_images__holder > div > p {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -1791,48 +1414,6 @@ header > .lower_menu__holder > ul > li.search_icon {
 .game_for_everyone_images__holder > .extreme_level_of_sports_f {
   background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_f.svg) no-repeat;
   background-size: cover;
-}
-
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
 }
 
 .what_is_touch_rugby__holder > .img__holder {
@@ -2012,48 +1593,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   font-weight: normal;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-}
-
 .blogs_images__holder > div {
   display: -ms-grid;
   display: grid;
@@ -2133,48 +1672,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   text-overflow: ellipsis;
 }
 
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-}
-
 .our_sponsors_text__holder > .title {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -2222,48 +1719,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   font-size: 1.3rem;
   line-height: 1.7rem;
   font-weight: normal;
-}
-
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
 }
 
 .footer__holder > div {

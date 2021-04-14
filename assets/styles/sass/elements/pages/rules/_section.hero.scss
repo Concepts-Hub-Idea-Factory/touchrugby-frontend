@@ -18,7 +18,6 @@
 .hero>.controllers>.hero_arrow_right {
     align-self: center;
     justify-self: end;
-    // padding-right: 20px;
     position: sticky;
     right: 20px;
 }
@@ -72,11 +71,7 @@
 
 .hero>.sliders__holder>.hero_item>figcaption>.pre_title {
     grid-area: pre_title;
-    // position: absolute;
-    // width: 122px;
-    // height: 16px;
-    // left: 79px;
-    // top: 211px;
+
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
@@ -85,6 +80,10 @@
     align-self: end;
     padding-left: 80px;
 }
+
+
+//Responsive Web Design - Quirkmode
+@media screen and (max-width: 1200px) {}
 
 /*
 .hero>.sliders__holder>.hero_item>figcaption>.title {
