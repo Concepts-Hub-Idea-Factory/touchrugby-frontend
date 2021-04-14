@@ -6,20 +6,8 @@
   "author": "Daggieblanqx <daggieblanqx@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "serve -l 9000 -s build",
-    "server": "node simpleserver.js",
-    "serverdev": "nodemon simpleserver.js",
-    "startdev": "SET PORT=9000 && craco start",
-    "start": "PORT=9000 craco start",
-    "build": "craco build",
-    "buildlocal": "craco build && yarn quickpush",
-    "test": "craco test",
-    "eject": "react-scripts eject",
     "prettierwatch": "onchange  \"**/*\" -e \"**/*.less\" -- yarn prettier",
     "prettier": "prettier --single-quote --trailing-comma es5 --write \"{main/components,.,*,__{tests,mocks}__}/**/*.js\"",
-    "quickpush": "cls && git status && git add * && git commit * -m \"Updated Code\" && git push",
-    "replayssh": "pm2 save && git pull && pm2 monit",
-    "nohupit": "nohup -c `yarn start` &",
-    "pullstash": "git stash && yarn replayssh"
-  }
+    "quickpush": "cls && git status && git add * && git commit * -m \"Updated Code\" && git push"
+   }
 }
