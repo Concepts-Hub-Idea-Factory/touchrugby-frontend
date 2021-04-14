@@ -26,4 +26,4 @@
 
 > Alternatively, you can fork or create a new repository and make all your changes there.
 
-![ https://giphy.com/embed/LmNwrBhejkK9EFP504 ] ( https://giphy.com/embed/LmNwrBhejkK9EFP504 )
+![Coding](https://giphy.com/embed/LmNwrBhejkK9EFP504)
