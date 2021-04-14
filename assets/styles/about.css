@@ -654,6 +654,15 @@ header > .lower_menu__holder > ul > li.search_icon {
   background-color: #ff0000;
 }
 
+@media screen and (max-width: 1200px) {
+  .hero > .sliders__holder > .hero_item > figcaption {
+    height: 60%;
+  }
+  .hero > .sliders__holder > .hero_item > figcaption > .pre_title {
+    font-size: 4rem;
+  }
+}
+
 .full_intro__holder > .intro {
   font-family: Roboto;
   font-style: normal;

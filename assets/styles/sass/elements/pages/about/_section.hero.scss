@@ -72,18 +72,22 @@
 }
 
 .hero>.sliders__holder>.hero_item>figcaption>.pre_title {
-     grid-area: pre_title;
+    grid-area: pre_title;
     font-family: Roboto;
     font-style: normal;
     font-weight: 900;
     font-size: 7rem;
     color: #FFFFFF;
     align-self: end;
-    width: min-intrinsic;       /* old Chrome, Safari */
-    width: -webkit-min-content; /* less old Chrome, Safari */
-    width: -moz-min-content;    /* current Firefox */
-    width: min-content;         /* current Chrome, Safari; not IE or Edge */
-    }
+    width: min-intrinsic;
+    /* old Chrome, Safari */
+    width: -webkit-min-content;
+    /* less old Chrome, Safari */
+    width: -moz-min-content;
+    /* current Firefox */
+    width: min-content;
+    /* current Chrome, Safari; not IE or Edge */
+}
 
 
 .hero>.sliders__holder>.hero_item>figcaption>.cta_btn {
@@ -97,15 +101,12 @@
 
 //Responsive Web Design - Quirkmode
 @media screen and (max-width: 1200px) {
+    .hero>.sliders__holder>.hero_item>figcaption {
+        height: 60%;
+    }
 
     .hero>.sliders__holder>.hero_item>figcaption>.pre_title {
-
+        font-size: 4rem;
     }
-
-    .hero>.sliders__holder>.hero_item>figcaption>.cta_btn {
-
-    }
-
-
 
 }
