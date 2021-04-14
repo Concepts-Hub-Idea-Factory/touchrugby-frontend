@@ -579,6 +579,7 @@ header > .lower_menu__holder > ul > li.search_icon {
   position: relative;
   height: 100%;
   width: 100vw;
+  background-color: black;
 }
 
 .hero > .sliders__holder > .hero_item > .hero_item_image {
@@ -590,15 +591,13 @@ header > .lower_menu__holder > ul > li.search_icon {
   border-radius: 5px;
   height: 100%;
   width: 100%;
+  opacity: .6;
 }
 
 .hero > .sliders__holder > .hero_item > figcaption {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  top: 5%;
+  left: 5%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -606,57 +605,35 @@ header > .lower_menu__holder > ul > li.search_icon {
   -ms-grid-rows: 6fr 2fr 2fr 4fr;
       grid-template-rows: 6fr 2fr 2fr 4fr;
       grid-template-areas: "pre_title" "title" "description" "cta_btn";
+  background: rgba(7, 163, 88, 0.4);
+  border-radius: 5px;
+  padding: 30px;
+  height: 70%;
 }
 
-.hero > .sliders__holder > .hero_item > figcaption > div > .pre_title {
+.hero > .sliders__holder > .hero_item > figcaption > .pre_title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: pre_title;
   font-family: Roboto;
   font-style: normal;
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 7rem;
   color: #FFFFFF;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  padding-left: 80px;
+  width: min-intrinsic;
+  /* old Chrome, Safari */
+  width: -webkit-min-content;
+  /* less old Chrome, Safari */
+  width: -moz-min-content;
+  /* current Firefox */
+  width: min-content;
+  /* current Chrome, Safari; not IE or Edge */
 }
 
-/*
-.hero>.sliders__holder>.hero_item>figcaption>.title {
-    grid-area: title; 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 1000;
-    font-size: 3rem;
-    color: #FFFFFF;
-    align-self: center;
-    padding-left: 80px;
-}
-
-.hero>.sliders__holder>.hero_item>figcaption>.title>span {
-    font-family: Rock Salt;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2rem;
-    color: #FFFFFF;
-}
-
-.hero>.sliders__holder>.hero_item>figcaption>.description {
-    grid-area: description;
-    width: 45%;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 1.3rem;
-    line-height: 1.7rem;
-    color: #FFFFFF;
-    padding-left: 80px;
-}
-
-*/
-.hero > .sliders__holder > .hero_item > figcaption > div > .cta_btn {
+.hero > .sliders__holder > .hero_item > figcaption > .cta_btn {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: cta_btn;
@@ -672,30 +649,8 @@ header > .lower_menu__holder > ul > li.search_icon {
   color: #FFFFFF;
   border: none;
   position: relative;
-  left: 5rem;
-  top: 2rem;
-  width: 10rem;
+  width: 100%;
   background-color: #ff0000;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
-  .hero > .sliders__holder > .hero_item > figcaption > .pre_title {
-    padding-left: 2.8rem;
-  }
-  .hero > .sliders__holder > .hero_item > figcaption > .title {
-    padding-left: 2.8rem;
-  }
-  .hero > .sliders__holder > .hero_item > figcaption > .description {
-    max-width: 75%;
-    padding-left: 2.8rem;
-  }
-  .hero > .sliders__holder > .hero_item > figcaption > .cta_btn {
-    left: 2.8rem;
-  }
 }
 
 .full_intro__holder > .intro {
@@ -851,48 +806,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-@media (min-width: 1281px) {
-  /* 
-	  ##Device = Desktops
-	  ##Screen = 1281px to higher resolution desktops
-	*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  /* 
-	  ##Device = Laptops, Desktops
-	  ##Screen = B/w 1025px to 1280px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* 
-	  ##Device = Tablets, Ipads (portrait)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* 
-	  ##Device = Tablets, Ipads (landscape)
-	  ##Screen = B/w 768px to 1024px
-	*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  /* 
-	  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-	  ##Screen = B/w 481px to 767px
-	*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  /* 
-	  ##Device = Most of the Smartphones Mobiles (Portrait)
-	  ##Screen = B/w 320px to 479px
-	*/
 }
 
 @media screen and (max-width: 1200px) {

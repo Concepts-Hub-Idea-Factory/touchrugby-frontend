@@ -3,17 +3,12 @@ header>.logo__holder {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    // align-item: center;
     place-items: center;
 }
 
 header>.logo__holder>.logo {
     height: 60%;
 }
-
-// header>.sidemenu__holder {
-//     display: none;
-// }
 
 header>.upper_menu__holder {
     grid-area: upper_menu__holder;
@@ -64,11 +59,6 @@ header>.upper_menu__holder>ul>li.phone {
     grid-template-columns: .5fr 2fr;
     grid-template-rows: 1fr;
     grid-gap: .5rem;
-    // position: absolute;
-    // width: 52px;
-    // height: 12px;
-    // left: 540px;
-    // top: 10px;
     font-family: Rosario;
     font-style: normal;
     font-weight: 300;
@@ -77,8 +67,6 @@ header>.upper_menu__holder>ul>li.phone {
     color: #000;
     align-items: center;
 }
-
-
 
 header>.upper_menu__holder>ul>li.phone>img {
     justify-self: end;
