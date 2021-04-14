@@ -21,4 +21,4 @@
 
 5. Happy coding.
 
-# TLDR; If you must modify any frontend file, do so in a separate branch and not in the main branch, else the changes made from the local repository (frontend codebase) may overwrite your work progress.
+# TLDR; If you need to modify any frontend file, do so in a separate branch and not in the main branch, else the changes made from the local repository (frontend codebase) may overwrite your work progress.
