@@ -1,3 +1,12 @@
+/*Chrome Vendor Prefix*/
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
 header>.logo__holder {
     grid-area: logo__holder;
     display: grid;

@@ -274,6 +274,18 @@ section.footer_credits__holder {
   border-top: solid white 0.0225rem;
 }
 
+/*Chrome Vendor Prefix*/
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
 header > .logo__holder {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;

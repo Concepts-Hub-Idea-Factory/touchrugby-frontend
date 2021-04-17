@@ -112,6 +112,18 @@ section.footer_credits__holder {
       grid-template-rows: 1fr;
 }
 
+/*Chrome Vendor Prefix*/
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
 header > .logo__holder {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
