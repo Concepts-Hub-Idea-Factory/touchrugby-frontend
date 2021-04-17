@@ -5,7 +5,7 @@
         "touchrugby.scss",
         "sass/mixins/_index.scss",
         "sass/elements/pages/common/_header.scss",
-        "sass/elements/pages/common/_section.hero.scss",
+        "sass/elements/pages/homepage/_section.hero.scss",
         "sass/elements/pages/homepage/_section.about__holder.scss",
         "sass/elements/pages/homepage/_section.upcoming_events__holder.scss",
         "sass/elements/pages/homepage/_section.player_of_the_season_text__holder.scss",
