@@ -274,7 +274,7 @@ section.footer_credits__holder {
   border-top: solid white 0.0225rem;
 }
 
-/*Chrome Vendor Prefix*/
+/*Chrome Vendor Prefix For scrollers*/
 ::-webkit-scrollbar {
   width: 0;
   /* Remove scrollbar space */

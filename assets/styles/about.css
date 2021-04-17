@@ -112,7 +112,7 @@ section.footer_credits__holder {
       grid-template-rows: 1fr;
 }
 
-/*Chrome Vendor Prefix*/
+/*Chrome Vendor Prefix For scrollers*/
 ::-webkit-scrollbar {
   width: 0;
   /* Remove scrollbar space */
