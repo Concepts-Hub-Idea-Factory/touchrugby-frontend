@@ -826,7 +826,6 @@ header > .lower_menu__holder > ul > li.search_icon {
   grid-area: card_img;
   width: 100%;
   height: 100%;
-  border: solid red 1px;
 }
 
 .howtoplay_cards__holder > * > .title {
