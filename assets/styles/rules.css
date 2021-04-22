@@ -307,6 +307,7 @@ header > .lower_menu__holder > ul {
           align-items: center;
   grid-gap: 1rem;
   place-items: center;
+  padding-left: 6.25rem;
 }
 
 header > .lower_menu__holder > ul > li > a {
