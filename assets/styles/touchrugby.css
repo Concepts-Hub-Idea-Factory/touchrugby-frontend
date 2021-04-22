@@ -443,7 +443,7 @@ header > .lower_menu__holder > ul {
       -ms-flex-align: center;
           align-items: center;
   grid-gap: 1rem;
-      grid-template-areas: "Home About News What_Is_Touch_Rugby Sponsorship Rules Contacts search_icon";
+  place-items: center;
 }
 
 header > .lower_menu__holder > ul > li > a {
@@ -465,70 +465,48 @@ header > .lower_menu__holder > ul > li > a:hover {
   text-underline-offset: 1.5px;
 }
 
-header > .lower_menu__holder > ul > li.Home {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: Home;
-  -ms-grid-column-align: end;
-      justify-self: end;
+/*
+header>.lower_menu__holder>ul>li.Home {
+    grid-area: Home;
+    justify-self: end;
 }
 
-header > .lower_menu__holder > ul > li.About {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: About;
-  -ms-grid-column-align: center;
-      justify-self: center;
+header>.lower_menu__holder>ul>li.About {
+    grid-area: About;
+    justify-self: center;
 }
 
-header > .lower_menu__holder > ul > li.News {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: News;
-  -ms-grid-column-align: center;
-      justify-self: center;
+header>.lower_menu__holder>ul>li.News {
+    grid-area: News;
+    justify-self: center;
 }
 
-header > .lower_menu__holder > ul > li.What_Is_Touch_Rugby {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
-  grid-area: What_Is_Touch_Rugby;
-  -ms-grid-column-align: center;
-      justify-self: center;
+header>.lower_menu__holder>ul>li.What_Is_Touch_Rugby {
+    grid-area: What_Is_Touch_Rugby;
+    justify-self: center;
 }
 
-header > .lower_menu__holder > ul > li.Sponsorship {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-  grid-area: Sponsorship;
-  -ms-grid-column-align: center;
-      justify-self: center;
+header>.lower_menu__holder>ul>li.Sponsorship {
+    grid-area: Sponsorship;
+    justify-self: center;
 }
 
-header > .lower_menu__holder > ul > li.Rules {
-  -ms-grid-row: 1;
-  -ms-grid-column: 6;
-  grid-area: Rules;
-  -ms-grid-column-align: center;
-      justify-self: center;
+header>.lower_menu__holder>ul>li.Rules {
+    grid-area: Rules;
+    justify-self: center;
 }
 
-header > .lower_menu__holder > ul > li.Contacts {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-  grid-area: Contacts;
-  -ms-grid-column-align: end;
-      justify-self: end;
+header>.lower_menu__holder>ul>li.Contacts {
+    grid-area: Contacts;
+    justify-self: end;
 }
 
-header > .lower_menu__holder > ul > li.search_icon {
-  -ms-grid-row: 1;
-  -ms-grid-column: 8;
-  grid-area: search_icon;
-  -ms-grid-column-align: center;
-      justify-self: center;
+header>.lower_menu__holder>ul>li.search_icon {
+    grid-area: search_icon;
+    justify-self: center;
 }
 
+*/
 /* The side navigation menu */
 .sidenav {
   height: 100%;

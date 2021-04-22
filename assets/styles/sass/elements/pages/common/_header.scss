@@ -125,7 +125,8 @@ header>.lower_menu__holder>ul {
     padding-right: var(--oneSidePadding);
     align-items: center;
     grid-gap: 1rem;
-    grid-template-areas: "Home About News What_Is_Touch_Rugby Sponsorship Rules Contacts search_icon";
+    // grid-template-areas: "Home About News What_Is_Touch_Rugby Sponsorship Rules Contacts search_icon";
+    place-items: center;
 
 }
 
@@ -153,7 +154,7 @@ header>.lower_menu__holder>ul>li>a:hover {
     text-underline-offset: 1.5px;
 
 }
-
+/*
 header>.lower_menu__holder>ul>li.Home {
     grid-area: Home;
     justify-self: end;
@@ -193,6 +194,8 @@ header>.lower_menu__holder>ul>li.search_icon {
     grid-area: search_icon;
     justify-self: center;
 }
+
+*/
 
 
 
