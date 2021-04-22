@@ -601,6 +601,13 @@ header>.lower_menu__holder>ul>li.search_icon {
   border-radius: 5px;
   padding: 30px;
   height: 70%;
+  width: min-intrinsic;
+  /* old Chrome, Safari */
+  width: -webkit-min-content;
+  /* less old Chrome, Safari */
+  width: -moz-min-content;
+  /* current Firefox */
+  width: min-content;
 }
 
 .hero > .sliders__holder > .hero_item > figcaption > .pre_title {
