@@ -21,7 +21,9 @@ abbr {
 header {
     display: grid;
     background-color: #000;
-    height: 10vh;
+    // height: 10vh;
+    height: 15vh;
+
     grid-template-columns: 1fr 7fr;
     grid-template-rows: 1.1fr 1fr;
     grid-template-areas: "logo__holder upper_menu__holder""logo__holder lower_menu__holder";
