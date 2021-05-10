@@ -5,9 +5,20 @@
 }
 
 
-@mixin cta_btn {
-    width: 6rem;
-    height: 2rem;
+@mixin cta_btn($btnWidth, $btnHeight ) {
+    
+    @if $btnWidth {
+        width: $btnWidth;
+    } @else {
+        width: 6rem;
+    }
+    
+    @if $btnHeight {
+        height: $btnHeight;
+    } @else {
+        height: 2rem;
+    }
+
     background: #07A358;
     border-radius: 5px;
     font-family: Rosario;

@@ -149,7 +149,7 @@ section.hero {
 
 .hero>.sliders__holder>.hero_item>figcaption>.cta_btn {
     grid-area: cta_btn;
-    @include cta_btn;
+    @include cta_btn(null,null);
     position: relative;
     left: 5rem;
     top: 2rem;

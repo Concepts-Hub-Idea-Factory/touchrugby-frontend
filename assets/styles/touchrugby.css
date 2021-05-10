@@ -275,13 +275,56 @@ section.footer_credits__holder {
 }
 
 .hd {
-  outline: purple 1px solid;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  -ms-grid-columns: 3fr 1fr 6fr;
-      grid-template-columns: 3fr 1fr 6fr;
+  -ms-grid-columns: 3fr 1fr 20fr;
+      grid-template-columns: 3fr 1fr 20fr;
+  background-color: #fff;
+}
+
+.hd > .hd_logo__holder {
+  background-color: #000;
+}
+
+.hd > .hd_blankspace {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+}
+
+.hd > .hd_blankspace > .shape_space {
+  width: 0;
+  height: 0;
+  border-top: 4.375rem solid white;
+  border-left: 4.375rem solid #000;
+}
+
+.hd > .hd_blankspace > .idle_space {
+  background-color: #000;
+}
+
+.hd > .hd_links__holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.hd > .hd_links__holder > .hd_upper_menu__holder {
+  background-color: #fff;
+}
+
+.hd > .hd_links__holder > .hd_lower_menu__holder {
+  background-color: #000;
 }
 
 header {
@@ -416,6 +459,23 @@ header > .upper_menu__holder > ul > li > button.cta_btn {
   border: none;
 }
 
+/*
+header>.upper_menu__holder>ul>li>button.cta_btn {
+    // width: 6rem;
+    // height: 2rem;
+    // background: #07A358;
+    // border-radius: 5px;
+    // font-family: Rosario;
+    // font-style: normal;
+    // font-weight: 300;
+    // font-size: .925rem;
+    // line-height: 12px;
+    // color: #FFFFFF;
+    // border: none;
+
+    @include cta_btn(10px,10px);
+}
+*/
 header > .lower_menu__holder {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
@@ -476,48 +536,6 @@ header > .lower_menu__holder > ul > li > a:hover {
   text-underline-offset: 1.5px;
 }
 
-/*
-header>.lower_menu__holder>ul>li.Home {
-    grid-area: Home;
-    justify-self: end;
-}
-
-header>.lower_menu__holder>ul>li.About {
-    grid-area: About;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.News {
-    grid-area: News;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.What_Is_Touch_Rugby {
-    grid-area: What_Is_Touch_Rugby;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.Sponsorship {
-    grid-area: Sponsorship;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.Rules {
-    grid-area: Rules;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.Contacts {
-    grid-area: Contacts;
-    justify-self: end;
-}
-
-header>.lower_menu__holder>ul>li.search_icon {
-    grid-area: search_icon;
-    justify-self: center;
-}
-
-*/
 /* The side navigation menu */
 .sidenav {
   height: 100%;
@@ -1235,7 +1253,7 @@ section.medals_list__holder {
       grid-template-columns: 1fr;
   -ms-grid-rows: 6fr 2fr 2fr 6fr;
       grid-template-rows: 6fr 2fr 2fr 6fr;
-      grid-template-areas: "title" "subtitle" "separator" "description";
+      grid-template-areas: "title" "subtitle" "separator" "description";
   grid-gap: 1rem;
 }
 
@@ -1398,7 +1416,7 @@ section.our_journey_images__holder {
       grid-template-columns: 1fr;
   -ms-grid-rows: 4fr 1fr;
       grid-template-rows: 4fr 1fr;
-      grid-template-areas: "title" ".";
+      grid-template-areas: "title" ".";
 }
 
 .our_journey_images__holder > .our_journey__extreme_level_of_sports_a {
@@ -1526,7 +1544,7 @@ section.game_for_everyone_images__holder {
       grid-template-columns: 1fr;
   -ms-grid-rows: 4fr 1fr;
       grid-template-rows: 4fr 1fr;
-      grid-template-areas: "title" ".";
+      grid-template-areas: "title" ".";
 }
 
 .game_for_everyone_images__holder > .extreme_level_of_sports_a {
@@ -1783,7 +1801,7 @@ section.blogs_images__holder {
       grid-template-columns: 1fr;
   -ms-grid-rows: 4fr 6fr 1fr 3fr;
       grid-template-rows: 4fr 6fr 1fr 3fr;
-      grid-template-areas: "." "title" "location" "description";
+      grid-template-areas: "." "title" "location" "description";
   padding: 0 1rem 0 2rem;
   -ms-grid-column-align: stretch;
       justify-self: stretch;

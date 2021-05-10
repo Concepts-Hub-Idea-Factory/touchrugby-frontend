@@ -68,9 +68,8 @@ section.player_of_the_season_images__holder {
     // color: #FFFFFF;
     // border: none;
 
-    @include cta_btn;
+    @include cta_btn(null,null);
 }
-
 
 //Responsive Web Design - Quirkmode
 @media screen and (max-width: 1200px) {

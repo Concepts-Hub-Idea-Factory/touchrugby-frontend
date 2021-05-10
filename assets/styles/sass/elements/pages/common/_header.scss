@@ -1,12 +1,54 @@
 .hd {
-    outline: purple 1px solid;
+    //outline: purple 1px solid;
     display: grid;
     grid-template-rows: auto;
-    grid-template-columns: 3fr 1fr 6fr;
+    grid-template-columns: 3fr 1fr 20fr;
+    background-color: #fff;
+    
+    &>.hd_logo__holder {
+        //outline: solid 1px red;
+        background-color: #000;
+    }
+
+    &>.hd_blankspace {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        padding: 0;
+        margin: 0;
+
+        &>.shape_space {
+            width: 0;
+            height: 0;
+            border-top: 4.375rem solid white;
+            border-left: 4.375rem solid #000;
+        }
+
+        &>.idle_space {
+            background-color: #000;
+        }
+
+        //outline:solid 1px green;
+    }
+
+    &>.hd_links__holder {
+        // //outline: solid 1px blue;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+
+        & > .hd_upper_menu__holder{
+            background-color: #fff;
+        }
+        & > .hd_lower_menu__holder{
+            background-color: #000;
+        }
+    }
+
+
+
+
 }
-
-
-
 
 
 header {
@@ -97,7 +139,7 @@ header>.upper_menu__holder>ul>li.phone>span {
 
 }
 
-header>.upper_menu__holder>ul>li>button.cta_btn {
+header > .upper_menu__holder > ul > li > button.cta_btn{
     width: 6rem;
     height: 2rem;
     background: #07A358;
@@ -110,6 +152,23 @@ header>.upper_menu__holder>ul>li>button.cta_btn {
     color: #FFFFFF;
     border: none;
 }
+/*
+header>.upper_menu__holder>ul>li>button.cta_btn {
+    // width: 6rem;
+    // height: 2rem;
+    // background: #07A358;
+    // border-radius: 5px;
+    // font-family: Rosario;
+    // font-style: normal;
+    // font-weight: 300;
+    // font-size: .925rem;
+    // line-height: 12px;
+    // color: #FFFFFF;
+    // border: none;
+
+    @include cta_btn(10px,10px);
+}
+*/
 
 header>.lower_menu__holder {
     grid-area: lower_menu__holder;
@@ -165,49 +224,7 @@ header>.lower_menu__holder>ul>li>a:hover {
     text-underline-offset: 1.5px;
 
 }
-
-/*
-header>.lower_menu__holder>ul>li.Home {
-    grid-area: Home;
-    justify-self: end;
-}
-
-header>.lower_menu__holder>ul>li.About {
-    grid-area: About;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.News {
-    grid-area: News;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.What_Is_Touch_Rugby {
-    grid-area: What_Is_Touch_Rugby;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.Sponsorship {
-    grid-area: Sponsorship;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.Rules {
-    grid-area: Rules;
-    justify-self: center;
-}
-
-header>.lower_menu__holder>ul>li.Contacts {
-    grid-area: Contacts;
-    justify-self: end;
-}
-
-header>.lower_menu__holder>ul>li.search_icon {
-    grid-area: search_icon;
-    justify-self: center;
-}
-
-*/
+ 
 
 
 

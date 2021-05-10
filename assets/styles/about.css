@@ -113,13 +113,56 @@ section.footer_credits__holder {
 }
 
 .hd {
-  outline: purple 1px solid;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  -ms-grid-columns: 3fr 1fr 6fr;
-      grid-template-columns: 3fr 1fr 6fr;
+  -ms-grid-columns: 3fr 1fr 20fr;
+      grid-template-columns: 3fr 1fr 20fr;
+  background-color: #fff;
+}
+
+.hd > .hd_logo__holder {
+  background-color: #000;
+}
+
+.hd > .hd_blankspace {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  padding: 0;
+  margin: 0;
+}
+
+.hd > .hd_blankspace > .shape_space {
+  width: 0;
+  height: 0;
+  border-top: 4.375rem solid white;
+  border-left: 4.375rem solid #000;
+}
+
+.hd > .hd_blankspace > .idle_space {
+  background-color: #000;
+}
+
+.hd > .hd_links__holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.hd > .hd_links__holder > .hd_upper_menu__holder {
+  background-color: #fff;
+}
+
+.hd > .hd_links__holder > .hd_lower_menu__holder {
+  background-color: #000;
 }
 
 header {
