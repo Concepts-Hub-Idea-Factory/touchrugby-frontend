@@ -1,3 +1,15 @@
+
+section.player_of_the_season_images__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    min-height: 50vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr;
+    grid-gap: 1rem;
+}
+
+
 .player_of_the_season_images__holder>.img__holder>img {
     // height: 145px;
     // height: 5rem ;

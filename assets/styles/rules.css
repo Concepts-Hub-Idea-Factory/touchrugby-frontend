@@ -137,16 +137,26 @@ section.footer_credits__holder {
       grid-template-rows: 1fr;
 }
 
-/*Chrome Vendor Prefix For scrollers*/
-::-webkit-scrollbar {
-  width: 0;
-  /* Remove scrollbar space */
-  background: transparent;
-  /* Optional: just make scrollbar invisible */
+.hd {
+  outline: purple 1px solid;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: 3fr 1fr 6fr;
+      grid-template-columns: 3fr 1fr 6fr;
 }
 
-::-webkit-scrollbar-thumb {
-  background: transparent;
+header {
+  display: -ms-grid;
+  display: grid;
+  background-color: #000;
+  height: 15vh;
+  -ms-grid-columns: 1fr 7fr;
+      grid-template-columns: 1fr 7fr;
+  -ms-grid-rows: 1.1fr 1fr;
+      grid-template-rows: 1.1fr 1fr;
+      grid-template-areas: "logo__holder upper_menu__holder" "logo__holder lower_menu__holder";
 }
 
 header > .logo__holder {
@@ -948,14 +958,87 @@ header>.lower_menu__holder>ul>li.search_icon {
   font-weight: normal;
 }
 
-.footer__holder > div {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+section.footer__holder {
+  display: -ms-grid;
+  display: grid;
+  padding: var(--pagePadding);
+  background-color: #000;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
 }
 
-.footer__holder > div > ul > li {
+.footer__holder > .footer_social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  padding-top: 33px;
+}
+
+.footer__holder > .footer_social > .social__holder {
+  text-align: center;
+  white-space: wrap;
+  width: 100%;
+}
+
+.footer__holder > .footer_social > .social__holder > span,
+.footer__holder > .footer_social > .social__holder ul {
+  display: inline;
+}
+
+.footer__holder > .footer_social > .social__holder > br {
+  display: none;
+}
+
+.footer__holder > .footer_social > .social__holder span {
+  color: #fff;
+}
+
+.footer__holder > .footer_social > .social__holder ul {
+  overflow-x: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.footer__holder > .footer_social > div li {
+  display: inline;
+  padding: 10px;
+}
+
+.footer__holder > .footer_social .fab,
+.footer__holder > .footer_social .fab::before {
+  color: #888;
+  font-size: 20px;
+}
+
+.footer__holder > .footer_social .fab:hover::before {
+  color: #fff;
+  font-size: 22px;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.footer__holder > .footer__links {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.footer__holder > .footer__links > div {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer__holder > .footer__links > div > ul > li {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -967,16 +1050,35 @@ header>.lower_menu__holder>ul>li.search_icon {
   cursor: pointer;
 }
 
+.footer__holder > .footer__links > div > ul > li:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1200px) {
-  .footer__holder > div {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 0;
-    min-width: 80%;
+  .footer__holder > .footer_social > .social__holder > span,
+  .footer__holder > .footer_social > .social__holder br,
+  .footer__holder > .footer_social > .social__holder ul {
+    display: block;
+    padding: 15px 0;
   }
   .footer__holder > div > ul > li {
     font-size: 14px;
   }
+  .footer__holder > .footer__links {
+    display: block;
+    text-align: center;
+  }
+}
+
+section.footer_credits__holder {
+  display: -ms-grid;
+  display: grid;
+  padding: var(--pagePadding);
+  background-color: #000;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
 }
 
 .footer_credits__holder > div > p {
@@ -988,6 +1090,7 @@ header>.lower_menu__holder>ul>li.search_icon {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -1,0 +1,120 @@
+
+
+// section.hero {
+//     display: grid;
+//     background-color: #fff;
+//     height: 80vh;
+//     position: relative;
+// }
+
+section.trc_rules_text__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 4fr;
+    grid-template-areas: "title""separator""description";
+}
+
+section.trc_rules_cards__holder {
+
+    background-color: #fff;
+    display: grid;
+    padding: var(--pagePadding);
+    grid-template-columns: repeat(3, minmax(300px, auto));
+    // grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-items: center;
+}
+
+
+
+
+section.thegame_text__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 4fr;
+    grid-template-areas: "title""separator""description";
+    background-image: url(../images/the_game_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: calc(var(--upDownPadding) - 3rem);
+}
+
+
+section.howtoplay_text__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 1fr 4fr;
+    grid-template-areas: "title""separator""description";
+}
+
+
+
+section.test_howtoplay_cards__holder {
+    background-color: #fff;
+    display: grid;
+    padding: var(--pagePadding);
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-items: center;
+}
+
+
+section.howtoplay_cards__holder {
+    background-color: #fff;
+    display: grid;
+    padding: var(--pagePadding);
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-items: center;
+}
+
+
+// @import './sass/elements/pages/common/_header.scss';
+// @import './sass/elements/pages/rules/_section.hero.scss';
+@import './sass/elements/pages/rules/_section.trc_rules_text__holder.scss';
+@import './sass/elements/pages/rules/_section.trc_rules_cards__holder.scss';
+@import './sass/elements/pages/rules/_section.howtoplay_cards__holder.scss';
+@import './sass/elements/pages/rules/_section.howtoplay_text__holder.scss';
+@import './sass/elements/pages/rules/_section.thegame_text__holder.scss';
+// @import './sass/elements/pages/common/_section.footer__holder.scss';
+// @import './sass/elements/pages/common/_section.footer_credits__holder.scss';
+
+//Responsive Web Design - Quirkmode
+@media screen and (max-width: 1200px) {
+    // :root {
+    //     --pagePadding: 0 2rem 0 2rem;
+    //     --oneSidePadding: 2rem;
+    // }
+
+
+    section.trc_rules_cards__holder {
+        background-color: #fff;
+        display: grid;
+        padding: var(--pagePadding);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 1rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        justify-items: center;
+    }
+
+
+
+}

@@ -1,0 +1,20 @@
+//Common:: presets
+@import './sass/elements/pages/common/_presets.scss';
+
+//Common:: header
+@import './sass/elements/pages/common/_header.scss';
+
+//Front page
+@import './_touchrugby2.scss';
+
+// About page
+@import './_about2.scss';
+
+//Rules page
+@import './_rules2.scss';
+
+//Common:: footer
+@import './sass/elements/pages/common/_section.footer__holder.scss';
+
+//Common:: footer credits
+@import './sass/elements/pages/common/_section.footer_credits__holder.scss';

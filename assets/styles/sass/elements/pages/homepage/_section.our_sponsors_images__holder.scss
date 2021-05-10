@@ -1,0 +1,18 @@
+section.our_sponsors_images__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+    justify-content: center;
+    place-items: center;
+    align-items: center;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    // margin-top: var(--upDownPadding);
+    margin-bottom: var(--upDownPadding);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}

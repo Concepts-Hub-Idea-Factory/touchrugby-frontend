@@ -1,4 +1,29 @@
+
+section.upcoming_events__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    grid-gap: 5rem;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
  
+.upcoming_events_scroller {
+    display: grid;
+    height: 5vh;
+    padding: var(--pagePadding);
+    justify-content: end;
+    align-items: center;
+    // padding-bottom:5rem;
+    margin: 1rem auto;
+}
 
 .upcoming_events__holder>.event {
 	position: relative;

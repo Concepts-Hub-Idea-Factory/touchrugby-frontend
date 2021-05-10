@@ -1,4 +1,17 @@
 
+section.blogs_text__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    // height: 30vh;
+    grid-template-columns: 1fr;
+    // grid-template-rows: 3fr .4fr 4fr;
+    grid-template-rows: 3fr .4fr 4fr;
+    grid-template-areas: "title""separator""description";
+}
+
+
+
 .blogs_text__holder>.title {
     grid-area: title; 
     font-family: Roboto;

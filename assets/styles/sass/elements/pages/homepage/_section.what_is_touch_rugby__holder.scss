@@ -1,4 +1,16 @@
 
+
+section.what_is_touch_rugby__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    // min-height: 60vh;
+    // grid-template-columns: 4fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: 1fr;
+}
+
+
 .what_is_touch_rugby__holder>.img__holder {
     grid-column: 1/6;
     grid-row: 1;

@@ -1,12 +1,22 @@
+section.footer_credits__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #000;
+    // height: 10vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr
+}
+
 .footer_credits__holder>div>p {
     text-align: center;
     color: #FFFFFF;
     margin: 1rem 0 1rem 0;
     justify-self: center;
     align-self: center;
+    font-size: 12px;
 }
 
-//Responsive Web Design - Quirkmode
-@media screen and (max-width: 1200px) {
+// //Responsive Web Design - Quirkmode
+// @media screen and (max-width: 1200px) {
 
-}
+// }

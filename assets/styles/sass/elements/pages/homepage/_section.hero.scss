@@ -1,3 +1,12 @@
+
+section.hero {
+    display: grid;
+    background-color: #fff; 
+    height: 80vh;
+    position: relative;
+}
+
+
 .hero>.controllers {
     position: absolute;
     top: 50%;

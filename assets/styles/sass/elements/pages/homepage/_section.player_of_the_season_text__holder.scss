@@ -1,3 +1,17 @@
+
+
+section.player_of_the_season_text__holder {
+    display: grid;
+    padding: var(--pagePadding);
+    background-color: #fff;
+    // height: 30vh;
+    grid-template-columns: 1fr;
+    // grid-template-rows: 4fr 1fr 4fr;
+    grid-template-rows: 3fr .4fr 4fr;
+    grid-template-areas: "title""separator""description";
+}
+
+
 .player_of_the_season_text__holder > .title{
     grid-area: title;
     font-family: Roboto;

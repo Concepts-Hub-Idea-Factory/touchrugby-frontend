@@ -1,4 +1,20 @@
 
+section.our_journey_images__holder {
+    // display: grid;
+    // padding: var(--pagePadding);
+    background-color: #fff;
+    // height: 60vh;
+    display: grid;
+    padding: var(--pagePadding);
+    min-height: 50vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+
 
 // .our_journey_images__holder>div>p {
 //     width: 112px;

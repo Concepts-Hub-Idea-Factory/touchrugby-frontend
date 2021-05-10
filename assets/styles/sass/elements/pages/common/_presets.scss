@@ -1,0 +1,42 @@
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import '../../../mixins/_index.scss';
+
+:root {
+    // --pagePadding: 0 121px 0 121px;
+    // --oneSidePadding: 121px;
+    --pagePadding: 0 7.563rem 0 7.563rem;
+    --oneSidePadding: 7.563rem;
+    --sectionMarginTop: 10vh;
+    --upDownPadding: 5rem;
+}
+
+/*Chrome Vendor Prefix For scrollers*/
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+
+abbr {
+    //for use in places where CSS truncates text 05120482AllanAEld
+    text-decoration: none;
+}
+
+
+strong {
+    font-weight: 900;
+}
+
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --pagePadding: 0 2rem 0 2rem;
+        --oneSidePadding: 2rem;
+    }
+}

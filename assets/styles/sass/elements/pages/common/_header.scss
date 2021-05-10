@@ -1,10 +1,21 @@
-/*Chrome Vendor Prefix For scrollers*/
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+.hd {
+    outline: purple 1px solid;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 3fr 1fr 6fr;
 }
-::-webkit-scrollbar-thumb {
-    background: transparent;
+
+
+
+
+
+header {
+    display: grid;
+    background-color: #000;
+    height: 15vh;
+    grid-template-columns: 1fr 7fr;
+    grid-template-rows: 1.1fr 1fr;
+    grid-template-areas: "logo__holder upper_menu__holder""logo__holder lower_menu__holder";
 }
 
 header>.logo__holder {
@@ -127,7 +138,7 @@ header>.lower_menu__holder>ul {
     grid-gap: 1rem;
     // grid-template-areas: "Home About News What_Is_Touch_Rugby Sponsorship Rules Contacts search_icon";
     place-items: center;
-    padding-left:6.25rem;
+    padding-left: 6.25rem;
 }
 
 header>.lower_menu__holder>ul>li>a {
@@ -154,6 +165,7 @@ header>.lower_menu__holder>ul>li>a:hover {
     text-underline-offset: 1.5px;
 
 }
+
 /*
 header>.lower_menu__holder>ul>li.Home {
     grid-area: Home;
@@ -236,10 +248,11 @@ header>.lower_menu__holder>ul>li.search_icon {
     transition: 0.3s;
 }
 
-.sidenav ul>li{
-        padding: 8px 8px 8px 32px;
+.sidenav ul>li {
+    padding: 8px 8px 8px 32px;
 
 }
+
 /* When you mouse over the navigation links, change their color */
 .sidenav ul>li>a:hover {
     // color: #f1f1f1;
