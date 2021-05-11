@@ -5,6 +5,26 @@
 }
 
 
+
+@mixin horizontal_scroll {
+    display: grid;
+    height: 100%;
+    position: relative;
+    grid-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.25 * var(--gutter));
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    padding-top: 1rem;
+}
+
+
 @mixin cta_btn($btnWidth, $btnHeight ) {
     
     @if $btnWidth {
