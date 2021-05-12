@@ -1,4 +1,7 @@
-
+section.blogs_text__holder{
+    @include title_separator_description__holder;
+}
+/*
 section.blogs_text__holder {
     display: grid;
     padding: var(--pagePadding);
@@ -59,3 +62,5 @@ section.blogs_text__holder {
 //Responsive Web Design - Quirkmode
 @media screen and (max-width: 1200px) {
 }
+
+*/

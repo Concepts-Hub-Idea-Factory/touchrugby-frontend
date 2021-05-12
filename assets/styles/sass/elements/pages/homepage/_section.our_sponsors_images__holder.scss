@@ -1,18 +1,32 @@
 section.our_sponsors_images__holder {
-    display: grid;
     padding: var(--pagePadding);
     background-color: #fff;
     height: auto;
-    grid-template-columns: repeat(auto-fit, 300px);
-    grid-template-rows: auto;
-    grid-gap: 5rem;
-    justify-content: center;
-    place-items: center;
-    align-items: center;
-    grid-auto-flow: column;
+    
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, 300px);
+    // grid-template-rows: auto;
+    // grid-gap: 5rem;
+    // justify-content: center;
+    // place-items: center;
+    // align-items: center;
+    // grid-auto-flow: column;
     overflow-x: scroll;
-    // margin-top: var(--upDownPadding);
-    margin-bottom: var(--upDownPadding);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    padding-top:30px;
+    padding-bottom:30px;
+
+    // background-color: blueviolet;
+
+
+    // padding-bottom: var(--upDownPadding);
+
     scrollbar-width: none;
     -ms-overflow-style: none;
+    
 }

@@ -88,3 +88,43 @@
     // padding-left: 80px;
 }
 
+
+
+@mixin title_separator_description__holder{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--touchWhite);
+        justify-content: center;
+        align-items: center;
+        // height:25vh;
+        // height: minmax(500px,25vh);
+        height:300px;
+        gap:1rem;
+        padding-top:30px;
+        padding-bottom:30px;
+    
+        &>.title {
+            grid-area: title;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 1.5rem;
+            line-height: 1.75rem;
+            color: #000000;
+        }
+    
+        &>.separator {
+        }
+    
+        &>.description {
+            grid-area: description;
+            width: 70%;
+            font-family: Roboto;
+            font-style: normal;
+            text-align: center;
+            color: #000000;
+            @include description_text;
+            font-weight: 400;
+        }
+     
+}

@@ -1,3 +1,8 @@
+
+section.game_for_everyone_text__holder{
+    @include title_separator_description__holder;
+}
+/*
 section.game_for_everyone_text__holder {
     display: grid;
     padding: var(--pagePadding);
@@ -82,3 +87,5 @@ section.game_for_everyone_text__holder {
 //Responsive Web Design - Quirkmode
 @media screen and (max-width: 1200px) {
 }
+
+*/

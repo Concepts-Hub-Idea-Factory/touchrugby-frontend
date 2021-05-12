@@ -1,5 +1,10 @@
 
 section.our_sponsors_text__holder {
+    @include title_separator_description__holder;
+}
+
+/*
+section.our_sponsors_text__holder {
     display: grid;
     padding: var(--pagePadding);
     background-color: #fff;
@@ -47,3 +52,4 @@ section.our_sponsors_text__holder {
 @media screen and (max-width: 1200px) {
 
 }
+*/

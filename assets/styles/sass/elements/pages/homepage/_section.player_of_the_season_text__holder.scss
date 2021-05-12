@@ -1,4 +1,42 @@
+section.player_of_the_season_text__holder {
+    @include title_separator_description__holder;
+    /*
+    display: flex;
+    flex-direction: column;
+    background-color: var(--touchWhite);
+    justify-content: center;
+    align-items: center;
+    height:25vh;
+    gap:1rem;
 
+    &>.title {
+        grid-area: title;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        color: #000000;
+    }
+
+    &>.separator {
+    }
+
+    &>.description {
+        grid-area: description;
+        width: 70%;
+        font-family: Roboto;
+        font-style: normal;
+        text-align: center;
+        color: #000000;
+        @include description_text;
+        font-weight: 400;
+    }
+
+    */
+}
+
+/*
 
 section.player_of_the_season_text__holder {
     display: grid;
@@ -83,3 +121,5 @@ color: #000000;
 //Responsive Web Design - Quirkmode
 @media screen and (max-width: 1200px) {
 }
+
+*/
