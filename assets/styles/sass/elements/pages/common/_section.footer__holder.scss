@@ -1,112 +1,123 @@
-section.footer__holder {
+footer {
+  bottom: 0;
+  z-index: 999;
+  width: 100% !important;
+}
+
+.footer__holder {
   display: grid;
   padding: var(--pagePadding);
   background-color: #000;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-}
 
-.footer__holder>.footer_social {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  padding-top: 33px;
+  &>.footer_social {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 33px;
 
-  &>.social__holder {
-    text-align: center;
-    // overflow-x: hidden;
-    white-space: wrap;
-    width: 100%;
-
-    &>span,
-    ul {
-      display: inline;
-    }
-
-    &>br {
-      display: none;
-    }
-  }
-
-  &>.social__holder span {
-    color: #fff;
-  }
-
-  &>.social__holder ul {
-    overflow-x: hidden;
-    white-space: nowrap;
-    width: 100%;
-  }
-
-  &>div li {
-    display: inline;
-    padding: 10px;
-  }
-
-  .fab,
-  .fab::before {
-    color: #888;
-    font-size: 20px;
-  }
-
-  .fab:hover::before {
-    color: #fff;
-    font-size: 22px;
-    transition: color .5s;
-  }
-}
-
-.footer__holder>.footer__links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  // grid-template-rows: 1fr;
-  grid-template-rows: auto;
-}
-
-.footer__holder>.footer__links>div {
-  justify-self: center;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.footer__holder>.footer__links>div>ul>li {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 188.6%;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: .5rem 0 .5rem 0;
-  cursor: pointer;
-
-  &:hover{
-    text-decoration: underline;
-  }
-
-}
-
-//Responsive Web Design - Quirkmode
-@media screen and (max-width: 1200px) {
-
-  .footer__holder>.footer_social {
     &>.social__holder {
+      text-align: center;
+      // overflow-x: hidden;
+      white-space: wrap;
+      width: 100%;
 
       &>span,
-      br,
       ul {
-        display: block;
-        padding: 15px 0;
+        display: inline;
+      }
+
+      &>br {
+        display: none;
+      }
+    }
+
+    &>.social__holder span {
+      color: #fff;
+    }
+
+    &>.social__holder ul {
+      overflow-x: hidden;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    &>div li {
+      display: inline;
+      padding: 10px;
+    }
+
+    .fab,
+    .fab::before {
+      color: #888;
+      font-size: 20px;
+    }
+
+    .fab:hover::before {
+      color: #fff;
+      font-size: 22px;
+      transition: color .5s;
+    }
+  }
+
+  &>.footer__links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+
+    &>div {
+      justify-self: center;
+      margin-top: 2.5rem;
+      margin-bottom: 2.5rem;
+
+
+      &>ul>li {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 188.6%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: .5rem 0 .5rem 0;
+        cursor: pointer;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
       }
     }
   }
 
-  .footer__holder>div>ul>li {
-    font-size: 14px;
-  }
 
-  .footer__holder>.footer__links {
-    display: block;
-    text-align: center;
+}
+
+
+//Responsive Web Design - Quirkmode
+@media screen and (max-width: 1200px) {
+
+  .footer__holder {
+    &>.footer_social {
+      &>.social__holder {
+        &>span,
+        br,
+        ul {
+          display: block;
+          padding: 15px 0;
+        }
+      }
+    }
+
+    &>.footer__links {
+      display: block;
+      text-align: center;
+
+      &>div>ul>li {
+        font-size: 14px;
+      }
+    }
+
   }
 }

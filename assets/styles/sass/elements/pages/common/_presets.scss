@@ -40,6 +40,26 @@ strong {
     font-weight: 900;
 }
 
+body > section{
+    max-width: 1440px; 
+	margin: 0 auto !important; 
+	float: none !important;
+    position: relative;
+}
+
+@-ms-viewport{
+    width: device-width;
+  }
+
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--touchGreen), 0 0 40px var(--touchGreen), 0 0 50px var(--touchGreen), 0 0 60px var(--touchGreen), 0 0 70px var(--touchGreen);
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px var(--touchRed), 0 0 40px var(--touchRed), 0 0 50px var(--touchRed), 0 0 60px var(--touchRed), 0 0 70px var(--touchRed), 0 0 80px var(--touchRed);
+    }
+  }
 
 @media screen and (max-width: 1200px) {
     :root {
