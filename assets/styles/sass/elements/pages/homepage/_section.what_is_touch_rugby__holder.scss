@@ -1,5 +1,3 @@
-
-
 section.what_is_touch_rugby__holder {
     display: grid;
     padding: var(--pagePadding);
@@ -23,7 +21,8 @@ section.what_is_touch_rugby__holder {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-    height: 50vh;
+    // height: 50vh;
+    height: 450px;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -38,6 +37,7 @@ section.what_is_touch_rugby__holder {
 }
 
 .what_is_touch_rugby__holder>.text__holder>div {
+    /*
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 1fr 4fr 4fr;
@@ -45,13 +45,18 @@ section.what_is_touch_rugby__holder {
     background: #FFFFFF;
     border-radius: 5px;
     border:solid 1px grey;
+    */
+
+    @include title_separator_description__holder;
+
+    &>.title>span {
+        font-family: Rock Salt;
+    }
+
 }
 
-// .what_is_touch_rugby__holder>.img__holder>img {
-//     width: 80%;
-//     object-fit: contain;
-// }
 
+/*
 .what_is_touch_rugby__holder>.text__holder>div>.separator {
     justify-self: center;
     align-self: end;
@@ -86,6 +91,7 @@ section.what_is_touch_rugby__holder {
 
 }
 
+*/
 
 
 .what_is_touch_rugby__holder>.text__holder>div>.description {
@@ -138,7 +144,8 @@ section.what_is_touch_rugby__holder {
         opacity: .8;
 
     }
+
     .what_is_touch_rugby__holder>.text__holder {
-        grid-column:3/7;
+        grid-column: 3/7;
     }
 }

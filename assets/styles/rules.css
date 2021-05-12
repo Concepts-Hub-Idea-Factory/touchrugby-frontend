@@ -1156,7 +1156,7 @@ footer {
 
 .footer_credits__holder > div > p {
   text-align: center;
-  color: #FFFFFF;
+  color: var(--touchWhite);
   margin: 1rem 0 1rem 0;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -1164,6 +1164,16 @@ footer {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 12px;
+}
+
+.footer_credits__holder > div > p > a {
+  text-decoration: none;
+  color: var(--touchWhite);
+}
+
+.footer_credits__holder > div > p > a:hover {
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 @media screen and (max-width: 1200px) {

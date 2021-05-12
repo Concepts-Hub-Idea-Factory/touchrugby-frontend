@@ -6,7 +6,7 @@ section.our_journey_images__holder {
     // height: 60vh;
     display: grid;
     padding: var(--pagePadding);
-    min-height: 50vh;
+    min-height: 300px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: auto;
     grid-gap: 1rem;

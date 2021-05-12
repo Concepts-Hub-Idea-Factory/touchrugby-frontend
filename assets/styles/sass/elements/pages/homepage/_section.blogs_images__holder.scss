@@ -1,4 +1,84 @@
+section.blogs_images__holder {
+    padding: var(--pagePadding);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    gap: 1rem;
 
+    &>div {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex:1;
+    }
+
+    &>.touch_nanyuki {
+        background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/touch_nanyuki.svg) no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        height: 100%;
+    }
+
+    &>.touch_kisumu {
+        background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/touch_kisumu.svg) no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+        height: 100%;
+    }
+
+
+
+    &>div>.title {
+        // grid-area: title;
+        // align-self: end;
+        font-family: Rock Salt;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 23px;
+        line-height: 55px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+
+    &>div>.location {
+        // grid-area: location;
+        // align-self: center;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 23px;
+        line-height: 27px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+    }
+
+    &>div>.description {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: justify;
+        color: #FFFFFF;
+
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        width: 90%;
+        max-height: 30%;
+        overflow-y: scroll;
+
+        scroll-snap-type: y proximity;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        
+    }
+
+}
+
+/*
 section.blogs_images__holder {
     display: grid;
     padding: var(--pagePadding);
@@ -105,3 +185,5 @@ section.blogs_images__holder {
         min-height: 50vh;
     }
 }
+
+*/
