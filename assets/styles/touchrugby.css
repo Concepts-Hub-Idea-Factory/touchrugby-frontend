@@ -1412,10 +1412,6 @@ section.player_of_the_season_images__holder {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 1rem;
-}
-
-.player_of_the_season_images__holder > .img__holder > img {
-  width: 100%;
   height: 300px;
 }
 
