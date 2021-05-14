@@ -2,24 +2,27 @@
     position: absolute;
     top: 50%;
     z-index: 1;
-    width: 100%;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    // margin-left:50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .hero>.controllers>.hero_arrow_left {
     align-self: center;
     justify-self: start;
     position: sticky;
-    left: 20px;
+    // left: 20px;
 }
 
 .hero>.controllers>.hero_arrow_right {
     align-self: center;
     justify-self: end;
     position: sticky;
-    right: 20px;
+    // right: 20px;
 }
 
 .hero>.sliders__holder {
@@ -42,7 +45,8 @@
 .hero>.sliders__holder>.hero_item {
     position: relative;
     height: 100%;
-    width: 100vw;
+    width: 100%;
+    max-width: var(--maxWebpageWidth);
 }
 
 .hero>.sliders__holder>.hero_item>.hero_item_image {

@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import '../../../libs/rfs.scss';
 @import '../../../mixins/_index.scss';
 
 :root {
@@ -11,19 +13,22 @@
     --oneSidePadding: 7.563rem;
     --sectionMarginTop: 10vh;
     --upDownPadding: 5rem;
+    --maxWebpageWidth: 1440px;
 
 
     //colors
     --touchGreen: #07A358;
     --touchBlack: #000;
-    --touchWhite:  #fff;
+    --touchWhite: #fff;
     --touchRed: #ff0000;
 }
 
 /*Chrome Vendor Prefix For scrollers*/
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -40,10 +45,10 @@ strong {
     font-weight: 900;
 }
 
-body{
-    max-width: 1440px; 
-	margin: 0 auto !important; 
-	float: none !important;
+body {
+    max-width: var(--maxWebpageWidth);
+    margin: 0 auto !important;
+    float: none !important;
     position: relative;
     overflow-x: hidden;
 
@@ -54,23 +59,26 @@ body{
     // background-attachment: fixed;
 }
 
-main{
-    background:var(--touchWhite);
+main {
+    background: var(--touchWhite);
 }
 
-@-ms-viewport{
+@-ms-viewport {
     width: device-width;
-  }
+}
 
 
-@-webkit-keyframes glow {
+@keyframes glow {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--touchGreen), 0 0 40px var(--touchGreen), 0 0 50px var(--touchGreen), 0 0 60px var(--touchGreen), 0 0 70px var(--touchGreen);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--touchGreen), 0 0 40px var(--touchGreen), 0 0 50px var(--touchGreen), 0 0 60px var(--touchGreen), 0 0 70px var(--touchGreen);
     }
+
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px var(--touchRed), 0 0 40px var(--touchRed), 0 0 50px var(--touchRed), 0 0 60px var(--touchRed), 0 0 70px var(--touchRed), 0 0 80px var(--touchRed);
+        //   text-shadow: 0 0 20px #fff, 0 0 30px var(--touchRed), 0 0 40px var(--touchRed), 0 0 50px var(--touchRed), 0 0 60px var(--touchRed), 0 0 70px var(--touchRed), 0 0 80px var(--touchRed);
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--touchGreen), 0 0 40px var(--touchGreen), 0 0 50px var(--touchGreen), 0 0 60px var(--touchGreen), 0 0 70px var(--touchGreen);
+
     }
-  }
+}
 
 @media screen and (max-width: 1200px) {
     :root {
@@ -78,3 +86,4 @@ main{
         --oneSidePadding: 2rem;
     }
 }
+

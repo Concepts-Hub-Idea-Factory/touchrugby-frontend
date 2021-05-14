@@ -617,13 +617,15 @@ header>.lower_menu__holder>ul>li>a:hover {
   position: absolute;
   top: 50%;
   z-index: 1;
-  width: 100%;
+  width: 90%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .hero > .controllers > .hero_arrow_left {
@@ -634,7 +636,6 @@ header>.lower_menu__holder>ul>li>a:hover {
       justify-self: start;
   position: -webkit-sticky;
   position: sticky;
-  left: 20px;
 }
 
 .hero > .controllers > .hero_arrow_right {
@@ -645,7 +646,6 @@ header>.lower_menu__holder>ul>li>a:hover {
       justify-self: end;
   position: -webkit-sticky;
   position: sticky;
-  right: 20px;
 }
 
 .hero > .sliders__holder {
@@ -672,7 +672,8 @@ header>.lower_menu__holder>ul>li>a:hover {
 .hero > .sliders__holder > .hero_item {
   position: relative;
   height: 100%;
-  width: 100vw;
+  width: 100%;
+  max-width: var(--maxWebpageWidth);
 }
 
 .hero > .sliders__holder > .hero_item > .hero_item_image {
