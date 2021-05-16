@@ -52,13 +52,23 @@ body {
     float: none !important;
     position: relative;
     overflow-x: hidden;
-    
+
     // box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background: #eee;
 }
 
 main {
     background: var(--touchWhite);
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    max-width: var(--maxWebpageWidth);
+    z-index: 0;
+    width: 100%;
 }
 
 @-ms-viewport {
@@ -84,4 +94,3 @@ main {
         --oneSidePadding: 2rem;
     }
 }
-

@@ -1,4 +1,4 @@
-section.player_of_the_season_images__holder {
+/*section.player_of_the_season_images__holder {
     display: grid;
     padding: var(--pagePadding);
     background-color: #fff;
@@ -66,5 +66,51 @@ section.player_of_the_season_images__holder {
     @include cta_btn(null, null);
 }
 
-//Responsive Web Design - Quirkmode
-@media screen and (max-width: 1200px) {}
+*/
+
+section.player_of_the_season_images__holder {
+    position: relative;
+
+    &>.controllers {
+        @include scrollable_block_controllers;
+    }
+
+
+    &>.scroller {
+        display: grid;
+        background-color: #fff;
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+        overflow-x: scroll;
+        grid-auto-columns: 18.75rem;
+        padding-left: .2rem;
+        padding-right: .2rem;
+        justify-content: center;
+
+
+        &>div {
+            min-height: 18.75rem;
+            border-radius: 5px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 4fr 1fr;
+            grid-template-areas:
+                "title"
+                ".";
+            position: relative;
+            background-size: cover;
+            border-radius: 5%;
+
+            &::before {
+                content: "";
+                background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                border-radius: 5%;
+            }
+        }
+    }
+}
