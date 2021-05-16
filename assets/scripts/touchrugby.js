@@ -1,4 +1,5 @@
-/*
+function front_page() {
+  /*
 //Hero sliders
 var sliders__holder = document.querySelector('.sliders__holder');
 var all_sliders = sliders__holder.getElementsByClassName('hero_item');
@@ -40,39 +41,42 @@ function resize() {
 }
 */
 
-// Upcoming events sliders
-var initialScrollLeft = 0;
+  // Upcoming events sliders
+  var initialScrollLeft = 0;
 
-var upcomingEventsTab = document.querySelectorAll(
-  '.upcoming_events__holder'
-)[0];
-var upcomingEventsLeftBtn = document.querySelectorAll(
-  '#upcomingEventsLeftBtn'
-)[0];
-var upcomingEventsRightBtn = document.querySelectorAll(
-  '#upcomingEventsRightBtn'
-)[0];
-upcomingEventsLeftBtn.addEventListener('click', e => {
-  initialScrollLeft = initialScrollLeft - 300;
-  upcomingEventsTab.scrollLeft = initialScrollLeft;
-});
+  var upcomingEventsTab = document.querySelectorAll(
+    '.upcoming_events__holder'
+  )[0];
+  var upcomingEventsLeftBtn = document.querySelectorAll(
+    '#upcomingEventsLeftBtn'
+  )[0];
+  var upcomingEventsRightBtn = document.querySelectorAll(
+    '#upcomingEventsRightBtn'
+  )[0];
+  upcomingEventsLeftBtn.addEventListener('click', (e) => {
+    initialScrollLeft = initialScrollLeft - 300;
+    upcomingEventsTab.scrollLeft = initialScrollLeft;
+  });
 
-upcomingEventsRightBtn.addEventListener('click', e => {
-  initialScrollLeft = initialScrollLeft + 300;
-  upcomingEventsTab.scrollLeft = initialScrollLeft;
-});
+  upcomingEventsRightBtn.addEventListener('click', (e) => {
+    initialScrollLeft = initialScrollLeft + 300;
+    upcomingEventsTab.scrollLeft = initialScrollLeft;
+  });
+
+ 
+}
 
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+ /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+ function openNav() {
+  document.getElementById('mySidenav').style.width = '250px';
+  document.getElementById('main').style.marginLeft = '250px';
+  document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-} 
+  document.getElementById('mySidenav').style.width = '0';
+  document.getElementById('main').style.marginLeft = '0';
+  document.body.style.backgroundColor = 'white';
+}

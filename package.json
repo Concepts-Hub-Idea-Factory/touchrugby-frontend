@@ -9,5 +9,8 @@
     "prettierwatch": "onchange  \"**/*\" -e \"**/*.less\" -- yarn prettier",
     "prettier": "prettier --single-quote --trailing-comma es5 --write \"{main/components,.,*,__{tests,mocks}__}/**/*.js\"",
     "quickpush": "cls && git status && git add * && git commit * -m \"Updated Code\" && git push"
-   }
+  },
+  "dependencies": {
+    "rfs": "^9.0.3"
+  }
 }

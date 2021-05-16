@@ -817,7 +817,7 @@ header>.lower_menu__holder>ul>li>a:hover {
       grid-template-columns: 1fr;
   -ms-grid-rows: 6fr 2fr 2fr 6fr;
       grid-template-rows: 6fr 2fr 2fr 6fr;
-      grid-template-areas: "icon" "title" "separator" "description";
+      grid-template-areas: "icon" "title" "separator" "description";
   grid-gap: 1rem;
   place-items: center;
 }
@@ -869,11 +869,11 @@ header>.lower_menu__holder>ul>li>a:hover {
 }
 
 .howtoplay_cards__holder > .card_img__left {
-      grid-template-areas: "card_img title" "card_img description";
+      grid-template-areas: "card_img title" "card_img description";
 }
 
 .howtoplay_cards__holder > .card_img__right {
-      grid-template-areas: "title card_img" "description card_img";
+      grid-template-areas: "title card_img" "description card_img";
 }
 
 .howtoplay_cards__holder > * > .card_img {
@@ -921,10 +921,10 @@ header>.lower_menu__holder>ul>li>a:hover {
     grid-gap: 1rem;
   }
   .howtoplay_cards__holder > .card_img__left {
-        grid-template-areas: "title" "card_img" "description";
+        grid-template-areas: "title" "card_img" "description";
   }
   .howtoplay_cards__holder > .card_img__right {
-        grid-template-areas: "title" "card_img" "description";
+        grid-template-areas: "title" "card_img" "description";
   }
   .howtoplay_cards__holder > * > * {
     text-align: center;

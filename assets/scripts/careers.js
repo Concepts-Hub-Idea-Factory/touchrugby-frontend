@@ -1,5 +1,5 @@
-   function parallaxInit() {
-  document.querySelectorAll(".img-parallax").forEach((img, i) => {
+function parallaxInit() {
+  document.querySelectorAll('.img-parallax').forEach((img, i) => {
     var imgParent = img.parentElement;
 
     function parallaxImg() {
@@ -18,16 +18,15 @@
 
       var insertedStyles = `top:${imgPercent}%;transform:translate(-50%, -${imgPercent}%`;
       img.style = insertedStyles;
-      
-      img.style= `top:${imgPercent}%;transform:translate(-50%, -${imgPercent}%`;
-       
+
+      img.style = `top:${imgPercent}%;transform:translate(-50%, -${imgPercent}%`;
     }
 
-    window.addEventListener("scroll", () => {
+    window.addEventListener('scroll', () => {
       parallaxImg();
-      console.log('scrolling')
+      console.log('scrolling');
     });
   });
-};
+}
 
 parallaxInit();

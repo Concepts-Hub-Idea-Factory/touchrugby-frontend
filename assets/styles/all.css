@@ -1774,7 +1774,7 @@ section.our_sponsors_text__holder {
       grid-template-columns: 1fr;
   -ms-grid-rows: 6fr 2fr 2fr 6fr;
       grid-template-rows: 6fr 2fr 2fr 6fr;
-      grid-template-areas: "title" "subtitle" "separator" "description";
+      grid-template-areas: "title" "subtitle" "separator" "description";
   grid-gap: 1rem;
 }
 
@@ -1929,7 +1929,7 @@ section.our_sponsors_text__holder {
       grid-template-columns: 1fr;
   -ms-grid-rows: 4fr 1fr;
       grid-template-rows: 4fr 1fr;
-      grid-template-areas: "title" ".";
+      grid-template-areas: "title" ".";
 }
 
 .front_page .our_journey_images__holder > .our_journey__extreme_level_of_sports_a {
@@ -1999,16 +1999,31 @@ section.our_sponsors_text__holder {
   display: grid;
   padding: var(--pagePadding);
   background-color: #fff;
-  -ms-grid-columns: (minmax(18.75rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
-  -ms-grid-rows: auto auto;
-      grid-template-rows: auto auto;
+  grid-auto-flow: column;
   grid-gap: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  overflow-x: scroll;
+  grid-auto-columns: calc(3rem + 21vw);
 }
 
-.front_page .game_for_everyone_images__holder > div > p {
+@media (min-width: 1200px) {
+  .front_page section.game_for_everyone_images__holder {
+    grid-auto-columns: 18.75rem;
+  }
+}
+
+.front_page section.game_for_everyone_images__holder > div {
+  min-height: 18.75rem;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 4fr 1fr;
+      grid-template-rows: 4fr 1fr;
+      grid-template-areas: "title" ".";
+}
+
+.front_page section.game_for_everyone_images__holder > div > p {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
@@ -2024,18 +2039,6 @@ section.our_sponsors_text__holder {
   font-size: 16px;
   text-transform: capitalize;
   color: #FFFFFF;
-}
-
-.front_page .game_for_everyone_images__holder > div {
-  min-height: 18.75rem;
-  border-radius: 5px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 4fr 1fr;
-      grid-template-rows: 4fr 1fr;
-      grid-template-areas: "title" ".";
 }
 
 .front_page .game_for_everyone_images__holder > .extreme_level_of_sports_a {
@@ -2768,7 +2771,7 @@ Start: Rules page
       grid-template-columns: 1fr;
   -ms-grid-rows: 6fr 2fr 2fr 6fr;
       grid-template-rows: 6fr 2fr 2fr 6fr;
-      grid-template-areas: "icon" "title" "separator" "description";
+      grid-template-areas: "icon" "title" "separator" "description";
   grid-gap: 1rem;
   place-items: center;
 }
@@ -2820,11 +2823,11 @@ Start: Rules page
 }
 
 .rules_page .howtoplay_cards__holder > .card_img__left {
-      grid-template-areas: "card_img title" "card_img description";
+      grid-template-areas: "card_img title" "card_img description";
 }
 
 .rules_page .howtoplay_cards__holder > .card_img__right {
-      grid-template-areas: "title card_img" "description card_img";
+      grid-template-areas: "title card_img" "description card_img";
 }
 
 .rules_page .howtoplay_cards__holder > * > .card_img {
@@ -2872,10 +2875,10 @@ Start: Rules page
     grid-gap: 1rem;
   }
   .rules_page .howtoplay_cards__holder > .card_img__left {
-        grid-template-areas: "title" "card_img" "description";
+        grid-template-areas: "title" "card_img" "description";
   }
   .rules_page .howtoplay_cards__holder > .card_img__right {
-        grid-template-areas: "title" "card_img" "description";
+        grid-template-areas: "title" "card_img" "description";
   }
   .rules_page .howtoplay_cards__holder > * > * {
     text-align: center;
