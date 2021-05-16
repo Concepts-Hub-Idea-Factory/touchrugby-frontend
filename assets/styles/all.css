@@ -936,6 +936,43 @@ section.game_for_everyone_text__holder {
 
 */
   /*
+.game_for_everyone_images__holder>.extreme_level_of_sports_a {
+    background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_a.svg) no-repeat;
+
+    background-size: cover;
+}
+
+.game_for_everyone_images__holder>.extreme_level_of_sports_b {
+    background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_b.svg) no-repeat;
+
+    background-size: cover;
+}
+
+.game_for_everyone_images__holder>.extreme_level_of_sports_c {
+    background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_c.svg) no-repeat;
+
+    background-size: cover;
+}
+
+.game_for_everyone_images__holder>.extreme_level_of_sports_d {
+    background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_d.svg) no-repeat;
+
+    background-size: cover;
+}
+
+.game_for_everyone_images__holder>.extreme_level_of_sports_e {
+    background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_e.svg) no-repeat;
+
+    background-size: cover;
+}
+
+.game_for_everyone_images__holder>.extreme_level_of_sports_f {
+    background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_f.svg) no-repeat;
+
+    background-size: cover;
+}
+*/
+  /*
 .what_is_touch_rugby__holder>.text__holder>div>.separator {
     justify-self: center;
     align-self: end;
@@ -2021,6 +2058,8 @@ section.our_sponsors_text__holder {
   -ms-grid-rows: 4fr 1fr;
       grid-template-rows: 4fr 1fr;
       grid-template-areas: "title" ".";
+  position: relative;
+  background-size: cover;
 }
 
 .front_page section.game_for_everyone_images__holder > div > p {
@@ -2039,36 +2078,17 @@ section.our_sponsors_text__holder {
   font-size: 16px;
   text-transform: capitalize;
   color: #FFFFFF;
+  z-index: 1;
 }
 
-.front_page .game_for_everyone_images__holder > .extreme_level_of_sports_a {
-  background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_a.svg) no-repeat;
-  background-size: cover;
-}
-
-.front_page .game_for_everyone_images__holder > .extreme_level_of_sports_b {
-  background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_b.svg) no-repeat;
-  background-size: cover;
-}
-
-.front_page .game_for_everyone_images__holder > .extreme_level_of_sports_c {
-  background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_c.svg) no-repeat;
-  background-size: cover;
-}
-
-.front_page .game_for_everyone_images__holder > .extreme_level_of_sports_d {
-  background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_d.svg) no-repeat;
-  background-size: cover;
-}
-
-.front_page .game_for_everyone_images__holder > .extreme_level_of_sports_e {
-  background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_e.svg) no-repeat;
-  background-size: cover;
-}
-
-.front_page .game_for_everyone_images__holder > .extreme_level_of_sports_f {
-  background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_f.svg) no-repeat;
-  background-size: cover;
+.front_page section.game_for_everyone_images__holder > div::before {
+  content: "";
+  background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .front_page section.what_is_touch_rugby__holder {

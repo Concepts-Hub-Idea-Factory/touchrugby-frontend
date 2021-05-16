@@ -6,9 +6,9 @@ section.game_for_everyone_images__holder {
     grid-gap: 1rem;
     overflow-x: scroll;
     // grid-auto-columns: rfs(10rem);
-      @include rfs(18.75rem, grid-auto-columns);
-      // @include rfs(4rem, border-radius);
-      
+    @include rfs(18.75rem, grid-auto-columns);
+    // @include rfs(4rem, border-radius);
+
 
 
     &>div {
@@ -21,6 +21,8 @@ section.game_for_everyone_images__holder {
         grid-template-areas:
             "title"
             ".";
+        position: relative;
+        background-size: cover;
 
         &>p {
 
@@ -37,10 +39,23 @@ section.game_for_everyone_images__holder {
             // line-height: 18px;
             text-transform: capitalize;
             color: #FFFFFF;
+
+            z-index: 1;
+        }
+
+        &::before {
+            content: "";
+            background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
         }
     }
 }
 
+/*
 .game_for_everyone_images__holder>.extreme_level_of_sports_a {
     background: linear-gradient(1.3deg, #060A03 0.62%, rgba(12, 17, 7, 0) 53.1%), url(../images/extreme_level_of_sports_a.svg) no-repeat;
 
@@ -76,3 +91,4 @@ section.game_for_everyone_images__holder {
 
     background-size: cover;
 }
+*/
