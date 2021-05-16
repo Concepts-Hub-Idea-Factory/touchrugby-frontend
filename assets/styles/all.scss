@@ -1,20 +1,70 @@
 //Common:: presets
 @import './sass/elements/pages/common/_presets.scss';
 
-//Common:: header
-@import './sass/elements/pages/common/_header.scss';
+/*
+Start: Common header
+*/
+Header{
+    @import './sass/elements/pages/common/_header.scss';
+}
+/*
+End: Common header
+*/
 
-//Front page
-@import './_touchrugby2.scss';
+/*
+Start: Front page
+*/
+.front_page {
+    @import './_touchrugby2.scss';
+}
+/*
+End: Front page
+*/
 
-// About page
-@import './_about2.scss';
 
+/*
+Start: About page
+*/
+.about_page{
+    @import './_about2.scss';}
+/*
+End: About page
+*/
+
+
+/*
+Start: Rules page
+*/
 //Rules page
-@import './_rules2.scss';
+.rules_page{
+    @import './_rules2.scss';
+}
+/*
+End: Rules page
+*/
 
-//Common:: footer
-@import './sass/elements/pages/common/_section.footer__holder.scss';
 
-//Common:: footer credits
-@import './sass/elements/pages/common/_section.footer_credits__holder.scss';
+/*
+Start: Careers Page
+*/
+.careers_page {
+    @import './_careers.scss';
+}
+/*
+End: Careers Page
+*/
+
+/*
+Start:
+> Common footer
+> Common footer credits
+*/
+Footer{ 
+    @import './sass/elements/pages/common/_section.footer__holder.scss';
+    @import './sass/elements/pages/common/_section.footer_credits__holder.scss';
+}
+/*
+End: 
+> Common footer
+> Common footer credits
+*/
