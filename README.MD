@@ -12,13 +12,10 @@
     - ./touchrugby.html
     - ./about.html
     - ./rules.html
-    - ./assets/styles/touchrugby.css
-    - ./assets/styles/about.css
-    - ./assets/styles/rules.css
-    - ./assets/scripts/touchrugby.js
-    - ./assets/scripts/about.js
-    - ./assets/scripts/rules.js
+    - ./assets/styles/all.css
+    - ./assets/scripts/all.js
     - ./assets/images/* (all files in the "./assets/images/ directory" )
+    - ./assets/videos/* (all files in the "./assets/videos/ directory" )
 
 4. Ideally, you do not the sass files, they are for frontend development.
 
