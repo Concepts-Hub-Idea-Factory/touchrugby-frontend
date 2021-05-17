@@ -1,308 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Touch Rugby</title>
-        <link rel="stylesheet" href="./assets/styles/all.css">
-        <!-- Font Awesome Kit -->
-        <script src="https://kit.fontawesome.com/2c34f1c57c.js"
-            crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touch Rugby</title>
+    <link rel="stylesheet" href="./assets/styles/all.css">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/2c34f1c57c.js" crossorigin="anonymous"></script>
 
-    </head>
+</head>
 
-    <body>
-        <header>
-            <div class="hd">
-                <div class="hd_logo__holder">
-                    <img src="./assets/images/logo_with_hashtag.svg" alt=""
-                        class="logo">
-                </div>
-                <div class="hd_blankspace">
-                    <div class="shape_space"></div>
-                    <div class="idle_space"></div>
-                </div>
-                <div class="hd_links__holder">
-                    <ul class="hd_upper_menu__holder">
-                        <li>
-                            <a href=""><i class="fab fa-facebook"></i>TouchRugbyCentral</a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-instagram"></i>TouchRugbyCentral</a>
-                        </li>
-                        <li>
-                            <a href=""><i class="fab fa-twitter"></i>TouchRugbyCentral</a>
-                        </li>
-                        <li>
-                            <a href="mailto:hello@touchrugbycentral.co.ke"><i
-                                    class="far fa-envelope"></i>hello@touchrugbycentral.co.ke</a>
-                        </li>
+<body>
+    <header>
+        <div class="hd">
+            <div class="hd_logo__holder">
+                <img src="./assets/images/logo_with_hashtag.svg" alt="" class="logo">
+            </div>
+            <div class="hd_blankspace">
+                <div class="shape_space"></div>
+                <div class="idle_space"></div>
+            </div>
+            <div class="hd_links__holder">
+                <ul class="hd_upper_menu__holder">
+                    <li>
+                        <a href=""><i class="fab fa-facebook"></i>TouchRugbyCentral</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-instagram"></i>TouchRugbyCentral</a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-twitter"></i>TouchRugbyCentral</a>
+                    </li>
+                    <li>
+                        <a href="mailto:hello@touchrugbycentral.co.ke"><i
+                                class="far fa-envelope"></i>hello@touchrugbycentral.co.ke</a>
+                    </li>
 
-                        <li>
-                            <a href="tel:+254702281871"><i class="fas
+                    <li>
+                        <a href="tel:+254702281871"><i class="fas
                                     fa-phone-alt"></i> +254702 281 871</a>
-                        </li>
+                    </li>
 
-                        <li>
+                    <li>
+                        <button class="cta_btn">Play</button>
+                    </li>
+                </ul>
+                <ul class="hd_lower_menu__holder">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About TRC</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">Learn</a></li>
+                    <li><a href="">Sponsorship</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="hd_sidemenu__holder" onclick="openNav()">
+                <i class="fas fa-bars menu_icon_hambager_closed"></i>
+            </div>
+
+        </div>
+
+
+        <aside>
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <ul class="second_half">
+                    <li class="_Home"><a href=""> Home</a></li>
+                    <li class="_News"><a href="">About TRC</a></li>
+                    <li class="_About"><a href="">News</a></li>
+                    <li class="_What_Is_Touch_Rugby"><a href="">Learn</a></li>
+                    <li class="_Sponsorship"><a href="">Sponsorship</a></li>
+                    <li class="_Contacts"><a href="">Contact Us</a></li>
+                    <li class="_search_icon"><a href=""><img src="./assets/images/search_vector_icon.svg" alt=""></a>
+                    </li>
+                    <li class="_username">
+                        <a href=""> <img src="./assets/images/trc_message_vector_icon.svg"
+                                alt="">&nbsp;<span>@TouchRugbyCentral</span>
+                        </a>
+                    </li>
+                    <li class="_phone">
+                        <a href=""> <img src="./assets/images/trc_phone_vector_icon.svg" alt=""> &nbsp;<span>0702 281
+                                871</span>
+                        </a>
+                    </li>
+                    <li class="_cta_btn__holder">
+                        <button class="cta_btn">Play</button>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+    </header>
+
+
+    <main class="front_page">
+        <section class="hero">
+            <div class="controllers">
+                <img src="./assets/images/hero_arrow_left.svg" class="hero_arrow_left" alt="">
+                <img src="./assets/images/hero_arrow_right.svg" class="hero_arrow_right" alt="">
+            </div>
+            <div class="sliders__holder">
+
+                <figure class="hero_item">
+                    <video class="hero_item_image" src="./assets/videos/sample_rugby.mp4" autoplay loop></video>
+                    <figcaption>
+                        <div>
+
+                            <p class="title"><span>Touch</span> <strong>Machakos</strong></p>
+                            <p class="description">Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Velit quo vitae deserunt,
+                                rem
+                                eaque reiciendis amet accusantium
+                                repellendus, blanditiis facilis quia omnis
+                                sequi
+                                numquam. Modi ratione sed rerum temporibus
+                                assumenda quasi laboriosam, adipisci a
+                                repudiandae maiores quam placeat
+                                voluptatibus!
+
+                            </p>
                             <button class="cta_btn">Play</button>
-                        </li>
-                    </ul>
-                    <ul class="hd_lower_menu__holder">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About TRC</a></li>
-                        <li><a href="">Events</a></li>
-                        <li><a href="">News</a></li>
-                        <li><a href="">Learn</a></li>
-                        <li><a href="">Sponsorship</a></li>
-                        <li><a href="">Contact Us</a></li>
-                    </ul>
-                </div>
+                        </div>
+                    </figcaption>
+                </figure>
 
-                <div class="hd_sidemenu__holder" onclick="openNav()">
-                    <i class="fas fa-bars menu_icon_hambager_closed"></i>
+
+                <figure class="hero_item">
+                    <img class="hero_item_image" src="./assets/images/hero_trc.svg" alt="">
+                    <figcaption>
+                        <div>
+
+                            <p class="title"><span>Touch</span> <strong>Machakos</strong></p>
+                            <p class="description">Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Velit quo vitae deserunt,
+                                rem
+                                eaque reiciendis amet accusantium
+                                repellendus, blanditiis facilis quia omnis
+                                sequi
+                                numquam. Modi ratione sed rerum temporibus
+                                assumenda quasi laboriosam, adipisci a
+                                repudiandae maiores quam placeat
+                                voluptatibus!
+
+                            </p>
+                            <button class="cta_btn">Play</button>
+                        </div>
+                    </figcaption>
+                </figure>
+
+
+                <figure class="hero_item">
+                    <img class="hero_item_image" src="./assets/images/hero_trc.svg" alt="">
+                    <figcaption>
+                        <div>
+
+                            <p class="title"><span>Touch</span> <strong>Machakos</strong></p>
+                            <p class="description">Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua.
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Velit quo vitae deserunt,
+                                rem
+                                eaque reiciendis amet accusantium
+                                repellendus, blanditiis facilis quia omnis
+                                sequi
+                                numquam. Modi ratione sed rerum temporibus
+                                assumenda quasi laboriosam, adipisci a
+                                repudiandae maiores quam placeat
+                                voluptatibus!
+
+                            </p>
+                            <button class="cta_btn">Play</button>
+                        </div>
+                    </figcaption>
+                </figure>
+
+
+
+
+
+            </div>
+
+        </section>
+
+        <section class="game_for_everyone_text__holder">
+            <p class="title"><span>Touch - </span>A Game for Everyone</p>
+            <img src="./assets/images/red-line.svg" alt="" class="separator">
+            <p class="description">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quisnostrud
+                exercitation ullamco aboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute</p>
+        </section>
+        <section class="game_for_everyone_images__holder">
+            <div class="controllers">
+                <div class="left_icon"><i class="fas fa-chevron-left"></i></div>
+                <div class="right_icon"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="scroller">
+                <div class="extreme_level_of_sports_a" style="background:
+                        url(./assets/images/extreme_level_of_sports_a.svg)
+                        no-repeat ; background-size: cover;">
+                    <p>Extreme level of sports</p>
+                </div>
+                <div class="extreme_level_of_sports_b" style="background:
+                        url(./assets/images/extreme_level_of_sports_b.svg)
+                        no-repeat ; background-size: cover;">
+                    <p>Extreme level of sports</p>
+                </div>
+                <div class="extreme_level_of_sports_c" style="background:
+                        url(./assets/images/extreme_level_of_sports_c.svg)
+                        no-repeat ; background-size: cover;">
+                    <p>Extreme level of sports</p>
+                </div>
+                <div class="extreme_level_of_sports_d" style="background:
+                        url(./assets/images/extreme_level_of_sports_d.svg)
+                        no-repeat ; background-size: cover;">
+                    <p>Extreme level of sports</p>
+                </div>
+                <div class="extreme_level_of_sports_e" style="background:
+                        url(./assets/images/extreme_level_of_sports_e.svg)
+                        no-repeat ; background-size: cover;">
+                    <p>Extreme level of sports</p>
+                </div>
+                <div class="extreme_level_of_sports_f" style="background:
+                        url(./assets/images/extreme_level_of_sports_f.svg)
+                        no-repeat ; background-size: cover;">
+                    <p>Extreme level of sports</p>
                 </div>
 
             </div>
 
-
-            <aside>
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn"
-                        onclick="closeNav()">&times;</a>
-                    <ul class="second_half">
-                        <li class="_Home"><a href=""> Home</a></li>
-                        <li class="_News"><a href="">About TRC</a></li>
-                        <li class="_About"><a href="">News</a></li>
-                        <li class="_What_Is_Touch_Rugby"><a href="">Learn</a></li>
-                        <li class="_Sponsorship"><a href="">Sponsorship</a></li>
-                        <li class="_Contacts"><a href="">Contact Us</a></li>
-                        <li class="_search_icon"><a href=""><img
-                                    src="./assets/images/search_vector_icon.svg"
-                                    alt=""></a>
-                        </li>
-                        <li class="_username">
-                            <a href=""> <img
-                                    src="./assets/images/trc_message_vector_icon.svg"
-                                    alt="">&nbsp;<span>@TouchRugbyCentral</span>
-                            </a>
-                        </li>
-                        <li class="_phone">
-                            <a href=""> <img
-                                    src="./assets/images/trc_phone_vector_icon.svg"
-                                    alt=""> &nbsp;<span>0702 281
-                                    871</span>
-                            </a>
-                        </li>
-                        <li class="_cta_btn__holder">
-                            <button class="cta_btn">Play</button>
-                        </li>
-                    </ul>
-                </div>
-
-            </aside>
-        </header>
+        </section>
 
 
-        <main class="front_page">
-            <section class="hero">
-                <div class="controllers">
-                    <img src="./assets/images/hero_arrow_left.svg"
-                        class="hero_arrow_left" alt="">
-                    <img src="./assets/images/hero_arrow_right.svg"
-                        class="hero_arrow_right" alt="">
-                </div>
-                <div class="sliders__holder">
-
-                    <figure class="hero_item">
-                        <img class="hero_item_image"
-                            src="./assets/images/hero_trc.svg" alt="">
-                        <figcaption>
-                            <div>
-
-                                <p class="title"><span>Touch</span> <strong>Machakos</strong></p>
-                                <p class="description">Lorem ipsum dolor sit
-                                    amet, consectetur adipiscing elit, sed do
-                                    eiusmod
-                                    tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Velit quo vitae deserunt,
-                                    rem
-                                    eaque reiciendis amet accusantium
-                                    repellendus, blanditiis facilis quia omnis
-                                    sequi
-                                    numquam. Modi ratione sed rerum temporibus
-                                    assumenda quasi laboriosam, adipisci a
-                                    repudiandae maiores quam placeat
-                                    voluptatibus!
-
-                                </p>
-                                <button class="cta_btn">Play</button>
-                            </div>
-                        </figcaption>
-                    </figure>
-
-
-                    <figure class="hero_item">
-                        <img class="hero_item_image"
-                            src="./assets/images/hero_trc.svg" alt="">
-                        <figcaption>
-                            <div>
-
-                                <p class="title"><span>Touch</span> <strong>Machakos</strong></p>
-                                <p class="description">Lorem ipsum dolor sit
-                                    amet, consectetur adipiscing elit, sed do
-                                    eiusmod
-                                    tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Velit quo vitae deserunt,
-                                    rem
-                                    eaque reiciendis amet accusantium
-                                    repellendus, blanditiis facilis quia omnis
-                                    sequi
-                                    numquam. Modi ratione sed rerum temporibus
-                                    assumenda quasi laboriosam, adipisci a
-                                    repudiandae maiores quam placeat
-                                    voluptatibus!
-
-                                </p>
-                                <button class="cta_btn">Play</button>
-                            </div>
-                        </figcaption>
-                    </figure>
-
-
-                    <figure class="hero_item">
-                        <video class="hero_item_image"
-                            src="./assets/videos/sample_rugby.mp4" autoplay
-                            loop></video>
-                        <figcaption>
-                            <div>
-
-                                <p class="title"><span>Touch</span> <strong>Machakos</strong></p>
-                                <p class="description">Lorem ipsum dolor sit
-                                    amet, consectetur adipiscing elit, sed do
-                                    eiusmod
-                                    tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Velit quo vitae deserunt,
-                                    rem
-                                    eaque reiciendis amet accusantium
-                                    repellendus, blanditiis facilis quia omnis
-                                    sequi
-                                    numquam. Modi ratione sed rerum temporibus
-                                    assumenda quasi laboriosam, adipisci a
-                                    repudiandae maiores quam placeat
-                                    voluptatibus!
-
-                                </p>
-                                <button class="cta_btn">Play</button>
-                            </div>
-                        </figcaption>
-                    </figure>
-
-
-
-                </div>
-
-            </section>
-
-            <section class="game_for_everyone_text__holder">
-                <p class="title"><span>Touch - </span>A Game for Everyone</p>
-                <img src="./assets/images/red-line.svg" alt=""
-                    class="separator">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quisnostrud
-                    exercitation ullamco aboris nisi ut aliquip ex ea
-                    commodo
-                    consequat. Duis aute</p>
-            </section>
-            <section class="game_for_everyone_images__holder">
-                <div class="controllers">
-                    <div class="left_icon"><i class="fas fa-chevron-left"></i></div>
-                    <div class="right_icon"><i class="fas fa-chevron-right"></i></div>
-                </div>
-                <div class="scroller">
-                    <div class="extreme_level_of_sports_a" style="background:
-                        url(./assets/images/extreme_level_of_sports_a.svg)
-                        no-repeat ; background-size: cover;">
-                        <p>Extreme level of sports</p>
-                    </div>
-                    <div class="extreme_level_of_sports_b" style="background:
-                        url(./assets/images/extreme_level_of_sports_b.svg)
-                        no-repeat ; background-size: cover;">
-                        <p>Extreme level of sports</p>
-                    </div>
-                    <div class="extreme_level_of_sports_c" style="background:
-                        url(./assets/images/extreme_level_of_sports_c.svg)
-                        no-repeat ; background-size: cover;">
-                        <p>Extreme level of sports</p>
-                    </div>
-                    <div class="extreme_level_of_sports_d" style="background:
-                        url(./assets/images/extreme_level_of_sports_d.svg)
-                        no-repeat ; background-size: cover;">
-                        <p>Extreme level of sports</p>
-                    </div>
-                    <div class="extreme_level_of_sports_e" style="background:
-                        url(./assets/images/extreme_level_of_sports_e.svg)
-                        no-repeat ; background-size: cover;">
-                        <p>Extreme level of sports</p>
-                    </div>
-                    <div class="extreme_level_of_sports_f" style="background:
-                        url(./assets/images/extreme_level_of_sports_f.svg)
-                        no-repeat ; background-size: cover;">
-                        <p>Extreme level of sports</p>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <section class="our_journey_text__holder">
-                <p class="title"><span>Touch -</span> Our Journey</p>
-                <img src="./assets/images/red-line.svg" alt=""
-                    class="separator">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quisnostrud
-                    exercitation ullamco aboris nisi ut aliquip ex ea
-                    commodo
-                    consequat. Duis aute</p>
-            </section>
-            <section class="our_journey_images__holder">
-                <div class="controllers">
-                    <div class="left_icon"><i class="fas fa-chevron-left"></i></div>
-                    <div class="right_icon"><i class="fas fa-chevron-right"></i></div>
-                </div>
-                <div class="scroller">
-                    <div class="our_journey__extreme_level_of_sports_a"
-                        style="background:
+        <section class="our_journey_text__holder">
+            <p class="title"><span>Touch -</span> Our Journey</p>
+            <img src="./assets/images/red-line.svg" alt="" class="separator">
+            <p class="description">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quisnostrud
+                exercitation ullamco aboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute</p>
+        </section>
+        <section class="our_journey_images__holder">
+            <div class="controllers">
+                <div class="left_icon"><i class="fas fa-chevron-left"></i></div>
+                <div class="right_icon"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="scroller">
+                <div class="our_journey__extreme_level_of_sports_a" style="background:
                         url(./assets/images/our_journey__extreme_level_of_sports_a.svg)
                         no-repeat ; background-size: cover;">
-                        <p>Extrem level of sports</p>
-                    </div>
-                    <div class="our_journey__extreme_level_of_sports_b"
-                        style="background:
+                    <p>Extrem level of sports</p>
+                </div>
+                <div class="our_journey__extreme_level_of_sports_b" style="background:
                         url(./assets/images/our_journey__extreme_level_of_sports_b.svg)
                         no-repeat ; background-size: cover;">
-                        <p>Extrem level of sports</p>
-                    </div>
-                    <div class="our_journey__extreme_level_of_sports_c"
-                        style="background:
+                    <p>Extrem level of sports</p>
+                </div>
+                <div class="our_journey__extreme_level_of_sports_c" style="background:
                         url(./assets/images/our_journey__extreme_level_of_sports_c.svg)
                         no-repeat ; background-size: cover;">
-                        <p>Extrem level of sports</p>
-                    </div>
+                    <p>Extrem level of sports</p>
+                </div>
 
 
 
@@ -310,259 +293,236 @@
 
 
 
-                    <div class="our_journey__extreme_level_of_sports_a"
-                        style="background:
+                <div class="our_journey__extreme_level_of_sports_a" style="background:
                         url(./assets/images/our_journey__extreme_level_of_sports_a.svg)
                         no-repeat ; background-size: cover;">
-                        <p>Extrem level of sports</p>
-                    </div>
-                    <div class="our_journey__extreme_level_of_sports_b"
-                        style="background:
+                    <p>Extrem level of sports</p>
+                </div>
+                <div class="our_journey__extreme_level_of_sports_b" style="background:
                         url(./assets/images/our_journey__extreme_level_of_sports_b.svg)
                         no-repeat ; background-size: cover;">
-                        <p>Extrem level of sports</p>
-                    </div>
-                    <div class="our_journey__extreme_level_of_sports_c"
-                        style="background:
+                    <p>Extrem level of sports</p>
+                </div>
+                <div class="our_journey__extreme_level_of_sports_c" style="background:
                         url(./assets/images/our_journey__extreme_level_of_sports_c.svg)
                         no-repeat ; background-size: cover;">
-                        <p>Extrem level of sports</p>
-                    </div>
+                    <p>Extrem level of sports</p>
                 </div>
-            </section>
+            </div>
+        </section>
 
 
-            <section class="player_of_the_season_text__holder">
-                <p class="title"><span>Touch - </span>Player Of The Season</p>
-                <img src="./assets/images/red-line.svg" alt=""
-                    class="separator">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quisnostrud
-                    exercitation ullamco aboris nisi ut aliquip ex ea
-                    commodo
-                    consequat. Duis aute</p>
-            </section>
-            <section class="player_of_the_season_images__holder">
-                <div class="controllers">
-                    <div class="left_icon"><i class="fas fa-chevron-left"></i></div>
-                    <div class="right_icon"><i class="fas fa-chevron-right"></i></div>
-                </div>
-                <div class="scroller">
-                    <div style="background:
+        <section class="player_of_the_season_text__holder">
+            <p class="title"><span>Touch - </span>Player Of The Season</p>
+            <img src="./assets/images/red-line.svg" alt="" class="separator">
+            <p class="description">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quisnostrud
+                exercitation ullamco aboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute</p>
+        </section>
+        <section class="player_of_the_season_images__holder">
+            <div class="controllers">
+                <div class="left_icon"><i class="fas fa-chevron-left"></i></div>
+                <div class="right_icon"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="scroller">
+                <div style="background:
                         url(./assets/images/player_of_the_season_a.svg)
                         no-repeat ; background-size: cover;">
-                    </div>
-                    <div style="background:
+                </div>
+                <div style="background:
                         url(./assets/images/player_of_the_season_b.svg)
                         no-repeat ; background-size: cover;">
-                    </div>
-                    <div style="background:
+                </div>
+                <div style="background:
                         url(./assets/images/player_of_the_season_c.svg)
                         no-repeat ; background-size: cover;">
-                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section class="medals_list_text__holder">
-                <p class="title"><span>Touch - </span> Our Stats</p>
-                <img src="./assets/images/red-line.svg" alt=""
-                    class="separator">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quisnostrud
-                    exercitation ullamco aboris nisi ut aliquip ex ea
-                    commodo
-                    consequat. Duis aute</p>
-            </section>
-
-
+        <section class="medals_list_text__holder">
+            <p class="title"><span>Touch - </span> Our Stats</p>
+            <img src="./assets/images/red-line.svg" alt="" class="separator">
+            <p class="description">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quisnostrud
+                exercitation ullamco aboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute</p>
+        </section>
 
 
-            <section class="medals_list__holder">
-                <div>
-                    <p class="title">234</p>
-                    <p class="subtitle">Amazing Experience</p>
-                    <img src="./assets/images/red-line.svg" alt=""
-                        class="separator">
-                    <p class="description">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                    </p>
-                </div>
-                <div>
-                    <p class="title">34</p>
-                    <p class="subtitle">Medals Won</p>
-                    <img src="./assets/images/red-line.svg" alt=""
-                        class="separator">
-                    <p class="description">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                    </p>
-                </div>
-                <div>
-                    <p class="title">24</p>
-                    <p class="subtitle">Talented Staff</p>
-                    <img src="./assets/images/red-line.svg" alt=""
-                        class="separator">
-                    <p class="description">Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit, sed do eiusmod tempor
-                    </p>
-                </div>
-            </section>
 
 
-            <section class="about__holder">
-                <p class="title"><span>Touch Rugby Central - </span> About</p>
-                <img src="./assets/images/red-line.svg" alt=""
-                    class="separator">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quisnostrud
-                    exercitation ullamco aboris nisi ut aliquip ex ea
-                    commodo
-                    consequat. Duis aute
+        <section class="medals_list__holder">
+            <div>
+                <p class="title">234</p>
+                <p class="subtitle">Amazing Experience</p>
+                <img src="./assets/images/red-line.svg" alt="" class="separator">
+                <p class="description">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor
                 </p>
-            </section>
+            </div>
+            <div>
+                <p class="title">34</p>
+                <p class="subtitle">Medals Won</p>
+                <img src="./assets/images/red-line.svg" alt="" class="separator">
+                <p class="description">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+            </div>
+            <div>
+                <p class="title">24</p>
+                <p class="subtitle">Talented Staff</p>
+                <img src="./assets/images/red-line.svg" alt="" class="separator">
+                <p class="description">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+            </div>
+        </section>
 
-            <section class="what_is_touch_rugby__holder">
-                <div class="img__holder">
-                    <!-- <img src="./assets/images/what_is_touch.svg" alt=""> -->
+
+        <section class="about__holder">
+            <p class="title"><span>Touch Rugby Central - </span> About</p>
+            <img src="./assets/images/red-line.svg" alt="" class="separator">
+            <p class="description">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quisnostrud
+                exercitation ullamco aboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute
+            </p>
+        </section>
+
+        <section class="what_is_touch_rugby__holder">
+            <div class="img__holder">
+                <!-- <img src="./assets/images/what_is_touch.svg" alt=""> -->
+            </div>
+
+            <div class="text__holder">
+                <div>
+                    <p class="title">What is <span>Touch?</span></p>
+                    <img src="./assets/images/red-line.svg" alt="" class="separator">
+                    <p class="description">Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt
+                        ut labore et</p>
+                    <button>READ MORE</button>
                 </div>
-
-                <div class="text__holder">
-                    <div>
-                        <p class="title">What is <span>Touch?</span></p>
-                        <img src="./assets/images/red-line.svg" alt=""
-                            class="separator">
-                        <p class="description">Lorem ipsum dolor sit amet,
-                            consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt
-                            ut labore et</p>
-                        <button>READ MORE</button>
-                    </div>
-                </div>
-                <div></div>
-            </section>
+            </div>
+            <div></div>
+        </section>
 
 
-            <section class="medals_list_text__holder">
-                <p class="title"><span>Touch - </span> Upcoming Events</p>
-                <img src="./assets/images/red-line.svg" alt=""
-                    class="separator">
-                <p class="description">Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt
-                    ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quisnostrud
-                    exercitation ullamco aboris nisi ut aliquip ex ea
-                    commodo
-                    consequat. Duis aute</p>
-            </section>
+        <section class="medals_list_text__holder">
+            <p class="title"><span>Touch - </span> Upcoming Events</p>
+            <img src="./assets/images/red-line.svg" alt="" class="separator">
+            <p class="description">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt
+                ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quisnostrud
+                exercitation ullamco aboris nisi ut aliquip ex ea
+                commodo
+                consequat. Duis aute</p>
+        </section>
 
-            <section class="upcoming_events__holder">
-                <div class="controllers">
-                    <div class="left_icon"><i class="fas fa-chevron-left"></i></div>
-                    <div class="right_icon"><i class="fas fa-chevron-right"></i></div>
-                </div>
-                <div class="scroller">
-                    <figure class="event">
-                        <img class="event_image"
-                            src="./assets/images/upcoming_events_a.svg"
-                            alt="">
-                        <figcaption>
-                            <span class="title__holder">
-                                <p class="title">UPCOMING MATCH</p>
-                            </span>
-                            <p class="subtitle">TOUCH</p>
-                            <p class="location">Nomads Beach</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="event">
-                        <img class="event_image"
-                            src="./assets/images/upcoming_events_a.svg"
-                            alt="">
-                        <figcaption>
-                            <span class="title__holder">
-                                <p class="title">UPCOMING MATCH</p>
-                            </span>
-                            <p class="subtitle">TOUCH</p>
-                            <p class="location">Nomads Beach</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="event">
-                        <img class="event_image"
-                            src="./assets/images/upcoming_events_a.svg"
-                            alt="">
-                        <figcaption>
-                            <span class="title__holder">
-                                <p class="title">UPCOMING MATCH</p>
-                            </span>
-                            <p class="subtitle">TOUCH</p>
-                            <p class="location">Nomads Beach</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="event">
-                        <img class="event_image"
-                            src="./assets/images/upcoming_events_a.svg"
-                            alt="">
-                        <figcaption>
-                            <span class="title__holder">
-                                <p class="title">UPCOMING MATCH</p>
-                            </span>
-                            <p class="subtitle">TOUCH</p>
-                            <p class="location">Nomads Beach</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="event">
-                        <img class="event_image"
-                            src="./assets/images/upcoming_events_a.svg"
-                            alt="">
-                        <figcaption>
-                            <span class="title__holder">
-                                <p class="title">UPCOMING MATCH</p>
-                            </span>
-                            <p class="subtitle">TOUCH</p>
-                            <p class="location">Nomads Beach</p>
-                        </figcaption>
-                    </figure>
-                    <figure class="event">
-                        <img class="event_image"
-                            src="./assets/images/upcoming_events_a.svg"
-                            alt="">
-                        <figcaption>
-                            <span class="title__holder">
-                                <p class="title">UPCOMING MATCH</p>
-                            </span>
-                            <p class="subtitle">TOUCH</p>
-                            <p class="location">Nomads Beach</p>
-                        </figcaption>
-                    </figure>
-                </div>
+        <section class="upcoming_events__holder">
+            <div class="controllers">
+                <div class="left_icon"><i class="fas fa-chevron-left"></i></div>
+                <div class="right_icon"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="scroller">
+                <figure class="event">
+                    <img class="event_image" src="./assets/images/upcoming_events_a.svg" alt="">
+                    <figcaption>
+                        <span class="title__holder">
+                            <p class="title">UPCOMING MATCH</p>
+                        </span>
+                        <p class="subtitle">TOUCH</p>
+                        <p class="location">Nomads Beach</p>
+                    </figcaption>
+                </figure>
+                <figure class="event">
+                    <img class="event_image" src="./assets/images/upcoming_events_a.svg" alt="">
+                    <figcaption>
+                        <span class="title__holder">
+                            <p class="title">UPCOMING MATCH</p>
+                        </span>
+                        <p class="subtitle">TOUCH</p>
+                        <p class="location">Nomads Beach</p>
+                    </figcaption>
+                </figure>
+                <figure class="event">
+                    <img class="event_image" src="./assets/images/upcoming_events_a.svg" alt="">
+                    <figcaption>
+                        <span class="title__holder">
+                            <p class="title">UPCOMING MATCH</p>
+                        </span>
+                        <p class="subtitle">TOUCH</p>
+                        <p class="location">Nomads Beach</p>
+                    </figcaption>
+                </figure>
+                <figure class="event">
+                    <img class="event_image" src="./assets/images/upcoming_events_a.svg" alt="">
+                    <figcaption>
+                        <span class="title__holder">
+                            <p class="title">UPCOMING MATCH</p>
+                        </span>
+                        <p class="subtitle">TOUCH</p>
+                        <p class="location">Nomads Beach</p>
+                    </figcaption>
+                </figure>
+                <figure class="event">
+                    <img class="event_image" src="./assets/images/upcoming_events_a.svg" alt="">
+                    <figcaption>
+                        <span class="title__holder">
+                            <p class="title">UPCOMING MATCH</p>
+                        </span>
+                        <p class="subtitle">TOUCH</p>
+                        <p class="location">Nomads Beach</p>
+                    </figcaption>
+                </figure>
+                <figure class="event">
+                    <img class="event_image" src="./assets/images/upcoming_events_a.svg" alt="">
+                    <figcaption>
+                        <span class="title__holder">
+                            <p class="title">UPCOMING MATCH</p>
+                        </span>
+                        <p class="subtitle">TOUCH</p>
+                        <p class="location">Nomads Beach</p>
+                    </figcaption>
+                </figure>
+            </div>
 
-            </section>
+        </section>
 
 
-            <section class="blogs_text__holder">
+        <section class="blogs_text__holder">
 
-                <p class="title"><span>Touch - </span>Latest
-                    Blog</p>
-                <img src="./assets/images/red-line.svg" alt=""
-                    class="separator">
-                <p class="description">Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor
-                    incididunt
-                    ut labore et
-                    dolore magna aliqua. Ut enim ad minim
-                    veniam, quisnostrud exercitation ullamco
-                    aboris nisi ut aliquip ex
-                    ea commodo consequat. Duis aute</p>
-            </section>
+            <p class="title"><span>Touch - </span>Latest
+                Blog</p>
+            <img src="./assets/images/red-line.svg" alt="" class="separator">
+            <p class="description">Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+                incididunt
+                ut labore et
+                dolore magna aliqua. Ut enim ad minim
+                veniam, quisnostrud exercitation ullamco
+                aboris nisi ut aliquip ex
+                ea commodo consequat. Duis aute</p>
+        </section>
+        <!--             
             <section class="blogs_images__holder">
                 <div class="controllers">
                     <div class="left_icon"><i class="fas fa-chevron-left"></i></div>
@@ -674,124 +634,158 @@
                     </div>
                     
                 </div>
-            </section>
+            </section> -->
 
-            <section class="our_sponsors_text__holder">
-                <p class="title"><span>Touch - </span> Sponsors</p>
-                <img src="./assets/images/red-line.svg" alt=""
-                    class="separator">
+
+
+
+        <section class="blogs_images__holder">
+
+            <div class="touch_nanyuki">
+                <p class="title">Touch</p>
+                <p class="location">Nanyuki</p>
                 <p class="description">Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quisnostrud
-                    exercitation ullamco
-                    aboris nisi ut aliquip ex ea commodo
-                    consequat. Duis aute
+                    amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                    incididunt ut labore et
+                    dolore magna aliquasss.
+                    Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Quas, accusantium.
+                    Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Architecto quod ea
+                    dolore modi incidunt
+                    eligendi maxime illo dolor saepe sed cum
+                    adipisci natus, quis quidem itaque
+                    numquam eos ex maiores
+                    non eius quos. Quos aliquam autem
+                    repellendus error voluptatibus quam
+                    maiores saepe! Perferendis
+                    aliquam odit enim voluptatem, facilis
+                    perspiciatis quae vel, rerum sunt
+                    pariatur architecto! At, nam
+                    neque. Quam cumque, autem sapiente atque
+                    animi dolor delectus voluptate
+                    praesentium necessitatibus
+                    dolore aspernatur ea velit eum,
+                    voluptatem impedit repudiandae incidunt,
+                    alias deserunt qui officiis
+                    fugiat. Molestiae ipsam, illum quibusdam
+                    quidem fuga, laboriosam consectetur iure
+                    omnis eveniet id
+                    ipsa aliquid minima rem corrupti.
                 </p>
-            </section>
-            <section class="our_sponsors_images__holder">
-                <img src="./assets/images/sponsor-disprz.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-macron.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-ifgfit.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-mpesa.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-kfc.svg"
-                    alt="">
+            </div>
+            <div class="touch_kisumu">
+                <p class="title">Touch</p>
+                <p class="location">Kisumu Dala</p>
+                <p class="description">Lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor
+                    incididunt ut labore et
+                    dolore magna aliqua.</p>
+            </div>
+        </section>
+
+        <section class="our_sponsors_text__holder">
+            <p class="title"><span>Touch - </span> Sponsors</p>
+            <img src="./assets/images/red-line.svg" alt="" class="separator">
+            <p class="description">Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quisnostrud
+                exercitation ullamco
+                aboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute
+            </p>
+        </section>
+        <section class="our_sponsors_images__holder">
+            <img src="./assets/images/sponsor-disprz.svg" alt="">
+            <img src="./assets/images/sponsor-macron.svg" alt="">
+            <img src="./assets/images/sponsor-ifgfit.svg" alt="">
+            <img src="./assets/images/sponsor-mpesa.svg" alt="">
+            <img src="./assets/images/sponsor-kfc.svg" alt="">
 
 
-                <img src="./assets/images/sponsor-disprz.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-macron.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-ifgfit.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-mpesa.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-kfc.svg"
-                    alt="">
+            <img src="./assets/images/sponsor-disprz.svg" alt="">
+            <img src="./assets/images/sponsor-macron.svg" alt="">
+            <img src="./assets/images/sponsor-ifgfit.svg" alt="">
+            <img src="./assets/images/sponsor-mpesa.svg" alt="">
+            <img src="./assets/images/sponsor-kfc.svg" alt="">
 
 
-                <img src="./assets/images/sponsor-disprz.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-macron.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-ifgfit.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-mpesa.svg"
-                    alt="">
-                <img src="./assets/images/sponsor-kfc.svg"
-                    alt="">
+            <img src="./assets/images/sponsor-disprz.svg" alt="">
+            <img src="./assets/images/sponsor-macron.svg" alt="">
+            <img src="./assets/images/sponsor-ifgfit.svg" alt="">
+            <img src="./assets/images/sponsor-mpesa.svg" alt="">
+            <img src="./assets/images/sponsor-kfc.svg" alt="">
 
-            </section>
+        </section>
 
-        </main>
+    </main>
 
-        <footer>
-            <!-- Start: Repeatable Footer-->
-            <div class="footer__holder">
-                <div class="footer_social">
-                    <!-- <div></div> -->
-                    <div class="social__holder">
-                        <span>Follow us on:</span>
-                        <br />
-                        <ul>
-                            <li>
-                                <a href=""><i class="fab
+    <footer>
+        <!-- Start: Repeatable Footer-->
+        <div class="footer__holder">
+            <div class="footer_social">
+                <!-- <div></div> -->
+                <div class="social__holder">
+                    <span>Follow us on:</span>
+                    <br />
+                    <ul>
+                        <li>
+                            <a href=""><i class="fab
                                         fa-facebook"></i></a>
-                            </li>
-                            <li>
+                        </li>
+                        <li>
 
-                                <a href=""><i class="fab
+                            <a href=""><i class="fab
                                         fa-instagram"></i></a>
-                            </li>
-                            <li>
+                        </li>
+                        <li>
 
-                                <a href=""><i class="fab
+                            <a href=""><i class="fab
                                         fa-twitter"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="footer__links">
-                    <div>
-                        <ul>
-                            <li>WHAT'S TOUCH?</li>
-                            <li>ABOUT TOUCH RUGBY</li>
-                            <li>NEWS</li>
-                            <li>EVENTS</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>Why Touch?</li>
-                            <li>Equipment To Play</li>
-                            <li>THE RULES</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>WHAT'S TOUCH?</li>
-                            <li>ABOUT FIT</li>
-                            <li>NEWS</li>
-                            <li>EVENTS</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer_credits__holder">
+            <div class="footer__links">
                 <div>
-                    <p><a href="">Privacy Policy</a> &nbsp; |
-                        &nbsp; <a href="">Terms & Conditions</a></p>
-                    <p>&copy;2021 Touch Rugby Central</p>
+                    <ul>
+                        <li>WHAT'S TOUCH?</li>
+                        <li>ABOUT TOUCH RUGBY</li>
+                        <li>NEWS</li>
+                        <li>EVENTS</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>Why Touch?</li>
+                        <li>Equipment To Play</li>
+                        <li>THE RULES</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>WHAT'S TOUCH?</li>
+                        <li>ABOUT FIT</li>
+                        <li>NEWS</li>
+                        <li>EVENTS</li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-        <script src="./assets/scripts/touchrugby.js"></script>
-    </body>
+        </div>
+        <div class="footer_credits__holder">
+            <div>
+                <p><a href="">Privacy Policy</a> &nbsp; |
+                    &nbsp; <a href="">Terms & Conditions</a></p>
+                <p>&copy;2021 Touch Rugby Central</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/scripts/touchrugby.js"></script>
+</body>
 
 </html>
