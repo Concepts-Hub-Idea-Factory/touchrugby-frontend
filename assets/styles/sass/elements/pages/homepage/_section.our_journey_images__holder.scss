@@ -2,9 +2,9 @@ section.our_journey_images__holder {
     position: relative;
 
     &>.controllers {
-@include scrollable_block_controllers;
-  
-}
+        @include scrollable_block_controllers;
+
+    }
 
 
     &>.scroller {
@@ -13,7 +13,7 @@ section.our_journey_images__holder {
         grid-auto-flow: column;
         grid-gap: 1rem;
         overflow-x: scroll;
-        grid-auto-columns:18.75rem;
+        grid-auto-columns: 18.75rem;
         padding-left: .2rem;
         padding-right: .2rem;
         justify-content: center;

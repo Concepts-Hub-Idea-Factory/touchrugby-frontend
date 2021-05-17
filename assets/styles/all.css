@@ -2749,23 +2749,69 @@ section.our_sponsors_text__holder {
   display: grid;
   background-color: #fff;
   grid-auto-flow: column;
-  grid-gap: 1rem;
   overflow-x: scroll;
-  grid-auto-columns: 18.75rem;
+  grid-auto-columns: 40rem;
   padding-left: .2rem;
   padding-right: .2rem;
 }
 
 .front_page .blogs_images__holder > .scroller > .blogpost {
-  position: relative;
-  height: 400px;
-  width: 50%;
-  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
   border: solid 1px green;
+  position: relative;
+  height: 40rem;
+  width: 100%;
+  margin: 0 1rem;
 }
 
-.front_page .blogs_images__holder > .scroller > .blogpost:first-child {
-  margin-left: 10rem;
+.front_page .blogs_images__holder > .scroller > .blogpost:first-child > * {
+  margin-left: 60px !important;
+}
+
+.front_page .blogs_images__holder > .scroller > .blogpost > .title {
+  font-family: Rock Salt;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 55px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.front_page .blogs_images__holder > .scroller > .blogpost > .location {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.front_page .blogs_images__holder > .scroller > .blogpost > .description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  width: 90%;
+  max-height: 30%;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y proximity;
+      scroll-snap-type: y proximity;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .front_page section.our_sponsors_text__holder {
